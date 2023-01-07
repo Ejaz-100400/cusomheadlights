@@ -60,7 +60,7 @@ header{
   .btn-41:active {
     top: 2px;
   }
-.menu{1138px
+.menu{
     font-size:16px;
     font-weight:600;
     margin-left:380px;
@@ -597,5 +597,40 @@ iframe{
     iframe{
         width:350px;
         margin-top:60px;
+    }
+}
+
+
+
+/* CONTACT PAGE */
+.contact-section{
+    min-height:100vh;
+    background-color: #171717;
+    padding-top:0px;
+}
+.contact-form{
+    min-height:100vh;
+    padding-top:140px;
+    padding-left:50px;
+    width:70%
+}
+.contact-form-testimonal{
+    width:50%;
+    min-height:100vh;
+}
+.form-sec{
+    width:70%;
+}
+textarea,input{
+    border-radius:10px;
+    background-color: transparent;;
+}
+@media(max-width:768px){
+    .contact-section{
+        flex-wrap: wrap;
+    }
+    .contact-form,.contact-form-testimonal{
+
+        width:100%;
     }
 }
