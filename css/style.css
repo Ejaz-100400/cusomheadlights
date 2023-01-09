@@ -14,7 +14,6 @@
 header{
     height:13%;
     z-index:10;
-    backdrop-filter:blur(10px);
 }
 .btn41-43 {
     padding: 10px 25px;
@@ -28,13 +27,13 @@ header{
     display: inline-block;
   }
   
-  .btn-41 {
+  .submit-btn {
     border: 2px solid rgb(255, 255, 255);
     z-index: 1;
     color: white;
   }
   
-  .btn-41:after {
+  .submit-btn:after {
     position: absolute;
     content: "";
     width: 0;
@@ -47,17 +46,17 @@ header{
     transition: all 0.3s ease;
   }
   
-  .btn-41:hover {
+  .submit-btn:hover {
     color: rgb(0, 0, 0);
   }
   
-  .btn-41:hover:after {
+  .submit-btn:hover:after {
     left: auto;
     right: 0;
     width: 100%;
   }
   
-  .btn-41:active {
+  .submit-btn:active {
     top: 2px;
   }
 .menu{
@@ -612,25 +611,111 @@ iframe{
     min-height:100vh;
     padding-top:140px;
     padding-left:50px;
-    width:70%
+    padding-bottom:20px;
+    color:#FBFAF5;
 }
 .contact-form-testimonal{
     width:50%;
-    min-height:100vh;
+    min-height:110vh;
+    padding-top:200px;
+    padding-left:30px;
+    background: linear-gradient(to top right,rgba(4, 4, 4, 0.338),rgba(15, 13, 13, 0.361)), url('https://www.mercedes-benz.co.nz/passengercars/mercedes-benz-cars/models/c-class/coupe/explore/intelligent-drive-technologies/multibeam-led/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide_3cfb/image.MQ6.12.20180725123802.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .form-sec{
     width:70%;
 }
 textarea,input{
     border-radius:10px;
-    background-color: transparent;;
+    background-color: transparent;
+    height:200px;
 }
-@media(max-width:768px){
+.review-name{
+    right:50px;
+    margin-top:20px;
+}
+.form-floating{
+    color:black;
+}
+.submit-btn{
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .submit-btn {
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 1;
+    color: white;
+  }
+  
+  .submit-btn:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .submit-btn:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  
+  .submit-btn:active {
+    top: 2px;
+  }
+.testimonial-item{
+    color:white;
+    height:250px;
+    font-size:30px;
+    text-align:center;
+    font-weight:500;
+    line-height: 50px;
+    backdrop-filter:blur(5px);
+    background-color: rgba(255, 255, 255, 0.235);
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.swiper-pagination-bullet{
+    background-color: #ffffff !important;
+  }
+
+.swiper-pagination-bullet-active {
+    background-color: #e6f50c!important;
+    margin-top:20px !important;
+    height: 10px !important;
+    width: 10px !important;
+  }
+@media(max-width:968px){
     .contact-section{
         flex-wrap: wrap;
     }
     .contact-form,.contact-form-testimonal{
-
+        width:100%;
+    }
+    .review-name{
+        font-size: 18px;
+    }
+    .testimonial-item{
+        font-size:18px;
         width:100%;
     }
 }
