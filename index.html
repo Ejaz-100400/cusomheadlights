@@ -13,7 +13,13 @@
     <title>Custom Headlight | Chennai</title>
 </head>
 <body>
-    <div class="preloader"></div>
+    <div id="preloader">
+        <section class="preloader-img">
+            <div id="pre-img">
+                <img src="./img/cropped-Dark-roads-no-more-300x151-removebg-preview.png" width="500" alt="">
+            </div>
+        </section>
+    </div>
     <div class="customheadlight  position-relative">
         <!-- HEADER SECTION -->
         <header class="align-items-center justify-content-between  position-fixed w-100 des-header p-4">
@@ -33,10 +39,9 @@
                         </a>
                     
                     <li class="menu-item">
-                        <a href="#" class="text-decoration-none">
+                        <a href="http://localhost:5173/"  class="text-decoration-none">
                             Services
                         </a>
-                    
                     <li class="menu-item">
                         <a href="#" class="text-decoration-none">
                             Products
@@ -126,7 +131,7 @@
         </main>
 
         <!-- ABOUT SECTION -->
-        <main class="about-section position-relative">
+        <main class="about-section position-relative" id="about">
             <section class="about-ques choose-ques position-absolute">
                 <div class="text-center position-relative">
                     <h1>Who are we?</h1>
@@ -147,13 +152,13 @@
                     <div class="border rounded p-4 nav-slide mt-5">
                         <nav>
                             <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
-                                <button class="nav-link fw-semi-bold active" id="nav-story-tab" data-bs-toggle="tab"
+                                <button class="nav-link gap-5 fw-semi-bold active" id="nav-story-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-story" type="button" role="tab" aria-controls="nav-story"
                                     aria-selected="true">Story</button>
-                                <button class="nav-link fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab"
+                                <button class="nav-link gap-5 fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission"
                                     aria-selected="false">Mission</button>
-                                <button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab"
+                                <button class="nav-link gap-5 fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision"
                                     aria-selected="false">Vision</button>
                             </div>
@@ -270,7 +275,7 @@
         </main>
 
         <!-- SERVICES SECTION -->
-        <main class="services-section">
+        <main class="services-section" id="services">
 
             <section class="services-ques position-absolute">
                 <div class="text-center text-light">
@@ -289,21 +294,21 @@
                         <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="col-lg-4">
                                 <div class="nav nav-pills d-flex justify-content-between service-img me-4">
-                                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
+                                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4 mb-4 active"
                                         data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="">  Headlight Cleaning</h5>
+                                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" id="lightset" alt="">  Headlight Cleaning</h5>
                                     </button>
-                                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4 mb-4"
                                         data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="">   Projector Fitting</h5>
+                                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="lightset">   Projector Fitting</h5>
                                     </button>
-                                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4 mb-4"
                                         data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="">   Fog Lamps</h5>
+                                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="lightset">   Fog Lamps</h5>
                                     </button>
-                                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
+                                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4 mb-0"
                                         data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="">   Car Systems & Speakers</h5>
+                                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="lightset">   Car Systems & Speakers</h5>
                                     </button>
                                 </div>
                             </div>

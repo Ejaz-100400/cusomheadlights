@@ -8,6 +8,14 @@ document.querySelector('.responsivemenu').addEventListener('click', () => {
     $('.responsivemenu').fadeToggle(200);
 })
 
+setTimeout(function(){
+    $('#preloader').fadeToggle();
+},2000)
+document.querySelector('.fa-phone').addEventListener('click', () => {
+    $('.fa-phone').fadeToggle(200);
+})
+
+
 window.onscroll=function(){
     if(document.documentElement.scrollTop>0){
         document.querySelector('header').style.backgroundColor = 'black';
@@ -32,14 +40,17 @@ document.querySelector('#chooseusdoor').addEventListener('click', (e) => {
     }
     $('.choose').fadeToggle(200);
 })
+
+
+
+
+
 // door open - about
 // intersection observer 
 const statsec=document.querySelector('.about-statssec');
 const options={
     threshold:1,
 }
-
-
 // ABOUT SECTION
 document.querySelector('#aboutdoor').addEventListener('click', function(e){
     if(e){
@@ -109,6 +120,4 @@ document.querySelector('#servicedoor').addEventListener('click', (e) => {
     $('.services-ques').fadeToggle(200);
 })
 
-// LIGHTSLIDER
-
-
+// CONTACT SECTION
