@@ -52,7 +52,7 @@ console.log(window.innerWidth)
 // services sidemenu button section
 const navlink = document.querySelectorAll('.nav-link-mob');
 navlink.forEach(function(navbtn){
-    navbtn.addEventListener('click', function(e){
+    navbtn.addEventListener('click', function(){
         $('#service-side-sec-mobview').slideToggle(100);
         document.querySelector('.services-section').scrollIntoView();
     });

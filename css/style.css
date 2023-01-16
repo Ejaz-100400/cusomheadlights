@@ -822,7 +822,7 @@ textarea:focus,input:focus{
     background-color: #000000;
     border-radius:20px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    transition: all 0.2s ease-in-out;
+    transition: all .1s ease-in-out;
     cursor:pointer;
     animation:updown 10s ease-in;
     filter:grayscale(80%) brightness(70%);;
@@ -852,7 +852,7 @@ textarea:focus,input:focus{
     line-height:35px;
     font-size:18px;
 }
-.nav-pills{
+.side-pad{
     padding:40px 20px;
 }
 .service-side-sec{
@@ -883,7 +883,7 @@ textarea:focus,input:focus{
     transform: scale(1.04)
 }
 .fa-chevron-right,.fa-chevron-left{
-    top:100px;
+    top:90px;
     left:10px;
     z-index:11;
     border-radius:50%;
@@ -916,24 +916,42 @@ textarea:focus,input:focus{
         display:block;
         visibility: visible;
     }
+    .service-side-sec-container{
+        background-color: #0460CC;
+        width:500px;
+    }
     .button-toggler{
         width:100%;
     }
     .service-side-sec{
-        width:340px;
+        width:450px;
         display:none;
         height:100%;
         position: fixed;
         z-index:8;
         background-color: #000000;
-        top:90px;
+        top:85px;
     }
     .service-content-sec{
         width:100%;
     }
     .service-side-menu{
+        width: 400px;
+        position: relative;
+        height:600px;
+    }
+}
+@media(max-width:400px){
+    .services-item{
+        width:220px;
+        margin-left:20px;
+    }
+    .service-side-menu{
         width: 300px;
         position: relative;
         height:600px;
+    }
+    .service-side-sec{
+        width:350px;
     }
 }
