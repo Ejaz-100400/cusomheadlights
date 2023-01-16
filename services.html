@@ -56,7 +56,7 @@
               </a>
         </header>
         <i class="fa-solid fa-phone position-fixed fa-2x" id="resp-contact"></i>
-        
+        <i class="fa-solid fa-chevron-right text-dark fa-2x position-fixed"></i>
         <!-- Header res -->
         <header class="resp-header  align-items-center justify-content-between  position-fixed w-100 p-2">
             <img src="./img/cropped-Dark-roads-no-more-300x151-removebg-preview.png" alt="" class="resp-img">
@@ -94,149 +94,314 @@
                 </ul>
             </div>
         </div>
-
         <!-- services section -->
-        <main class="services-content position-fixed">
-            <div class="services-box position-absolute col-md-6" id="headclean">
-                <i class="ri-close-line"></i>
-                <section class="services-desc mb-4 d-flex flex-wrap align-items-center justify-content-center">
-                    <div class="text-center">Services slider1</div>
-                    <div class="text-center">Services content1</div>
-                </section>
-            </div>
-            <div class="services-box position-absolute col-md-6" id="projfit">
-                <i class="ri-close-line"></i>
-                <section class="services-desc mb-4 d-flex flex-wrap align-items-center justify-content-center">
-                    <div class="text-center">Services slider2</div>
-                    <div class="text-center">Services content2</div>
-                </section>
-            </div>
-            <div class="services-box position-absolute col-md-6" id="foglamp">
-                <i class="ri-close-line"></i>
-                <section class="services-desc mb-4 d-flex flex-wrap align-items-center justify-content-center">
-                    <div class="text-center">Services slider3</div>
-                    <div class="text-center">Services content3</div>
-                </section>
-            </div>
-            <div class="services-box position-absolute col-md-6" id="sysspeak">
-                <i class="ri-close-line"></i>
-                <section class="services-desc mb-4 d-flex flex-wrap align-items-center justify-content-center">
-                    <div class="text-center">Services slider4</div>
-                    <div class="text-center">Services content4</div>
-                </section>
-            </div>
-            <div class="services-box position-absolute col-md-6" id="barlight">
-                <i class="ri-close-line"></i>
-                <section class="services-desc mb-4 d-flex flex-wrap align-items-center justify-content-center">
-                    <div class="text-center">Services slider5</div>
-                    <div class="text-center">Services content5</div>
-                </section>
-            </div>
-            <div class="services-box position-absolute col-md-6" id="headwiring">
-                <i class="ri-close-line"></i>
-                <section class="services-desc mb-4 d-flex flex-wrap align-items-center justify-content-center">
-                    <div class="text-center">Services slider6</div>
-                    <div class="text-center">Services content6</div>
-                </section>
-            </div>
-            <div class="services-box position-absolute col-md-6" id="drl">
-                <i class="ri-close-line"></i>
-                <section class="services-desc mb-4 d-flex flex-wrap align-items-center justify-content-center">
-                    <div class="text-center">Services slider7</div>
-                    <div class="text-center">Services content7</div>
-                </section>
-            </div>
+        <main class="services-section d-flex position-relative">
+            <section class="button-toggler position-relative w-100 d-flex">
+                <div class="nav service-side-sec nav-pills ">
+                    <div class="service-side-menu d-flex flex-column gap-3">
+                        <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4  active"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button" id="proj1" aria-current="page" >
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="">  Headlight Cleaning</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4 "
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button" id="proj2" aria-current="page">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">   Projector Fitting</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">   Fog Lamps</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">   Car Systems & Speakers</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">  Bar Lights</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id=""> Headlight Wiring</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-7" type="button">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">DRL Modification</h5>
+                    </button>
+                    </div>
+                </div>
+                <div class="service-content-sec" id="disp">
+                    <div class="tab-content w-100" id="">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <!-- Headlight-cleaning -->
+                            <div class="d-flex flex-wrap gap-3">
+                                <div class="swiper mySwiper py-5">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3 mt-5">
+                                    <h1 class="service-title">HEADLIGHT CLEANING</h1>
+                                    <div class="d-flex gap-3">
+                                        <button class="p-2 btn-success btn w-50">Call for Enquiry</button>
+                                        <button class="p-2 btn-success btn w-50">Message for Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-justify mt-5 service-para">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                             <!-- projector fitting -->
+                             <div class="d-flex flex-wrap gap-3">
+                                <div class="swiper mySwiper py-5">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3 mt-5">
+                                    <h1 class="service-title"> PROJECTOR FITTING</h1>
+                                    <div class="d-flex gap-3">
+                                        <button class="p-2 btn-success btn w-50">Call for Enquiry</button>
+                                        <button class="p-2 btn-success btn w-50">Message for Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-justify mt-5 service-para">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <!-- Fog Lamp -->
+                            <div class="d-flex flex-wrap gap-3">
+                                <div class="swiper mySwiper py-5">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3 mt-5">
+                                    <h1 class="service-title">FOG LAMPS</h1>
+                                    <div class="d-flex gap-3">
+                                        <button class="p-2 btn-success btn w-50">Call for Enquiry</button>
+                                        <button class="p-2 btn-success btn w-50">Message for Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-justify mt-5 service-para">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                
+                                </p>
+                            </div> 
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-4">
+                             <!-- Car systems & speakers -->
+                             <div class="d-flex flex-wrap gap-3">
+                                <div class="swiper mySwiper py-5">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3 mt-5">
+                                    <h1 class="service-title">CAR SYSTEMS & SPEAKERS</h1>
+                                    <div class="d-flex gap-3">
+                                        <button class="p-2 btn-success btn w-50">Call for Enquiry</button>
+                                        <button class="p-2 btn-success btn w-50">Message for Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-justify mt-5 service-para">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-5">
+                             <!-- Bar Light -->
+                             <div class="d-flex flex-wrap gap-3">
+                                <div class="swiper mySwiper py-5">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3 mt-5">
+                                    <h1 class="service-title">BAR LIGHTS</h1>
+                                    <div class="d-flex gap-3">
+                                        <button class="p-2 btn-success btn w-50">Call for Enquiry</button>
+                                        <button class="p-2 btn-success btn w-50">Message for Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-justify mt-5 service-para">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-6">
+                             <!-- Headlight Wiring -->
+                             <div class="d-flex flex-wrap gap-3">
+                                <div class="swiper mySwiper py-5">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3 mt-5">
+                                    <h1 class="service-title">HEADLIGHT WIRING</h1>
+                                    <div class="d-flex gap-3">
+                                        <button class="p-2 btn-success btn w-50">Call for Enquiry</button>
+                                        <button class="p-2 btn-success btn w-50">Message for Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-justify mt-5 service-para">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-7">
+                             <!-- DRL Variety -->
+                             <div class="d-flex flex-wrap gap-3">
+                                <div class="swiper mySwiper py-5">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="services-item tab-pane fade show active" 
+                                        style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3 mt-5">
+                                    <h1 class="service-title">DRL MODIFICATION</h1>
+                                    <div class="d-flex gap-3">
+                                        <button class="p-2 btn-success btn w-50">Call for Enquiry</button>
+                                        <button class="p-2 btn-success btn w-50">Message for Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-justify mt-5 service-para">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam impedit est cumque, nisi minus ipsa beatae incidunt culpa velit fugit vero tenetur hic cupiditate accusantium laborum. Saepe, provident voluptatibus?
+                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <main class="services-section">
-            <h1 class="text-center p-2 text-light service-title">Our Services</h1>
-            <section class="d-flex flex-wrap gap-5 justify-content-around align-items-center">
-            <!-- headlight cleaning -->
-            <div class="services-item d-flex justify-content-center align-items-center" 
-            style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),
-            rgba(56, 54, 54, 0.824)),
-            url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);">
-            </div>
-            <!-- projector fitting -->
-            <div class="services-item"  style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),
-            rgba(56, 54, 54, 0.824)),
-            url(https://i.pinimg.com/originals/5b/17/68/5b176817102e6d19a4445be8dd6b1009.jpg);" >
-            </div>
-             <!-- Fog Lamp -->
-            <div class="services-item" style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),
-            rgba(56, 54, 54, 0.824)),
-            url(https://images.philips.com/is/image/PhilipsConsumer/12834UNIX2-UPL-global-001?$jpglarge$&wid=1050);" >
-            </div>
-           <!-- Car systems & speakers -->
-            <div class="services-item" style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),
-            rgba(56, 54, 54, 0.824)),
-            url(https://media.istockphoto.com/id/694822874/photo/two-sound-speakers-on-black-background.jpg?s=612x612&w=0&k=20&c=LB34iUjMfEIM5xQ6aHssHqcwBtL7TLLahK8ofMlzQxM=);">
-            </div>
-            <!-- Bar Light -->
-            <div class="services-item" style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),
-            rgba(56, 54, 54, 0.824)),
-            url(https://www.seekpng.com/png/detail/970-9708592_its-principal-use-is-to-earn-a-bar.png);">
-            </div>
-            <!-- Headlight Wiring -->
-            <div class="services-item" style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),
-            rgba(56, 54, 54, 0.824)),
-            url(https://www.partsbigboss.in/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/i/m/huco_255_0018pi_dual_head_light_lamp_relay_with_wiring_harness_12_v_100_130w_hitachi_.jpg);">
-            </div>
-            <!-- DRL Variety -->
-            <div class="services-item" style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),
-            rgba(56, 54, 54, 0.824)),
-            url(https://drivesmartwarranty.com/wp-content/uploads/2019/01/Daytime_Running_Lights-3.png);">
-            </div>
-            
-            </section >
-        </main>
+        
               
         
         <!-- Footer section -->
-        <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="d-flex flex-wrap align-items-center justify-content-center">
-                    <div class="footer-locdesc mb-2">
-                        <h4 class="text-white mb-4">Contact</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="pt-2">
-                            <a target="_blank" class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.instagram.com/customheadlights.in/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/customheadlights.in">
-                                <i class="fa-brands fa-facebook"></i></a>
-                            <a target="_blank" class='btn btn-square btn-outline-light rounded-circle me-2' href="https://www.youtube.com/@customheadlights194">
-                                    <i class="fa-brands fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer-service d-block mt-3">
-                        <h4 class="text-white">Services</h4>
-                        <a class="btn btn-link" href="">Financial Planning</a>
-                        <br>
-                        <a class="btn btn-link" href="">Cash Investment</a>
-                        <br>
-                        <a class="btn btn-link" href="">Financial Consultancy</a>
-                        <br>
-                        <a class="btn btn-link" href="">Business Loans</a>
-                        <br>
-                        <a class="btn btn-link" href="">Business Analysis</a>
-                    </div>
-                    <div class="mt-4">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62176.70886857112!2d80.15253964079416!3d13.096378740804088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263bb756e5bf5%3A0x55322131f124eaf2!2sCustom%20Headlight%20Modification%20India!5e0!3m2!1sen!2sin!4v1673004097004!5m2!1sen!2sin"  
-                        style="border:0;"  width='300' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center text-center mt-4">
-                <span>Copyrights2023</span>&copy; <a class="text-decoration-none" href="#">CustomHeadlights</a>, All Right Reserved.
-            </div>
-        </div>
     </div>
         <script src="./js/services.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              loop:true,
+              slidesPerView: 2,
+              coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 400,
+                modifier: 1,
+                slideShadows: true,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              breakpoints: {
+                0:{
+                    slidesPerView:1,
+                    width:300,
+                },
+                640:{
+                    slidesPerView:2,
+                    width:700,
+                }
+              }
+            });
+          </script>
 </body>
 </html>
