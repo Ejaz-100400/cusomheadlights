@@ -36,9 +36,25 @@ document.querySelector('#proj1').addEventListener('click', function(){
 document.querySelector('#proj2').addEventListener('click', function(){
     const element = document.querySelectorAll('.services-item')[1];
 })
-document.querySelector('.fa-chevron-right').addEventListener('click', function(e){
+document.querySelector('#chevron').addEventListener('click', function(e){
     if(e){
-        $('.service-side-sec').fadeToggle(200);
+        $('#service-side-sec-mobview').slideToggle(100);
+        document.querySelector('.fa-chevron-right').classList.replace('fa-chevron-right','fa-chevron-left');
     }
 })
+if(window.innerWidth > 700){
+    $('#service-side-sec-desview').css('display', 'block');
+    $('#service-side-sec-mobview').css('display', 'none');
+}
+
+console.log(window.innerWidth)
     
+
+// services sidemenu button section
+const navlink = document.querySelectorAll('.nav-link');
+navlink.forEach(function(navbtn){
+    navbtn.addEventListener('click', function(e){
+        $('#service-side-sec-mobview').slideToggle(100);
+        document.querySelector('.services-section').scrollIntoView();
+    });
+});

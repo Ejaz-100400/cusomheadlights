@@ -30,22 +30,22 @@
             <div>
                 <ul class="menu d-flex align-items-center gap-5 mt-2 list-unstyled">
                     <li class="menu-item">
-                        <a href="#" class="text-decoration-none">
+                        <a href="./index.html" class="text-decoration-none">
                             Home
                         </a>
                     
                     <li class="menu-item">
-                        <a href="#" class="text-decoration-none">
+                        <a href="./index.html#about" class="text-decoration-none">
                            About
                         </a>
                     
                     <li class="menu-item">
-                        <a href="#" class="text-decoration-none">
+                        <a href="./services.html" class="text-decoration-none">
                             Services
                         </a>
                     
                     <li class="menu-item">
-                        <a href="#" class="text-decoration-none">
+                        <a href="./products.html" class="text-decoration-none">
                             Products
                         </a>
                     </li>
@@ -56,7 +56,7 @@
               </a>
         </header>
         <i class="fa-solid fa-phone position-fixed fa-2x" id="resp-contact"></i>
-        <i class="fa-solid fa-chevron-right text-dark fa-2x position-fixed"></i>
+        <i class="fa-solid fa-chevron-right text-dark fa-2x position-fixed" id="chevron"></i>
         <!-- Header res -->
         <header class="resp-header  align-items-center justify-content-between  position-fixed w-100 p-2">
             <img src="./img/cropped-Dark-roads-no-more-300x151-removebg-preview.png" alt="" class="resp-img">
@@ -67,22 +67,22 @@
             <div class="container menu-sec position-fixed">
                 <ul class="menu text-center gap-5 mt-2 list-unstyled mt-4" id="menu-item">
                     <li class="menu-item mt-2" >
-                        <a href="#" class="text-decoration-none">
+                        <a href="./index.html" class="text-decoration-none">
                         Home
                        </a>
                     </li>
                     <li class="menu-item mt-2">
-                        <a href="#" class="text-decoration-none">
+                        <a href="./index.html#about" class="text-decoration-none" aria-current="page">
                             About
                         </a>
                     </li>
                     <li class="menu-item mt-2">
-                        <a href="#" class="text-decoration-none">
+                        <a href="./services.html" class="text-decoration-none">
                             Services
                         </a>
                     </li>
                     <li class="menu-item mt-2">
-                        <a href="#" class="text-decoration-none">
+                        <a href="./products.html" class="text-decoration-none">
                             Products
                         </a>
                     </li>
@@ -97,7 +97,39 @@
         <!-- services section -->
         <main class="services-section d-flex position-relative">
             <section class="button-toggler position-relative w-100 d-flex">
-                <div class="nav service-side-sec nav-pills ">
+                <div class="nav service-side-sec nav-pills" id="service-side-sec-desview">
+                    <div class="service-side-menu d-flex flex-column gap-3">
+                        <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4  active"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button" id="proj1" aria-current="page" >
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="">  Headlight Cleaning</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4 "
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button" id="proj2" aria-current="page">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">   Projector Fitting</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">   Fog Lamps</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">   Car Systems & Speakers</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">  Bar Lights</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id=""> Headlight Wiring</h5>
+                    </button>
+                    <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-7" type="button">
+                        <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">DRL Modification</h5>
+                    </button>
+                    </div>
+                </div>
+                <div class="nav service-side-sec nav-pills" id="service-side-sec-mobview">
                     <div class="service-side-menu d-flex flex-column gap-3">
                         <button class="nav-link gap-5 w-100 d-flex align-items-center text-start border p-4  active"
                         data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button" id="proj1" aria-current="page" >

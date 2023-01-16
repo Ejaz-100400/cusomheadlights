@@ -90,7 +90,7 @@ header{
         background-color:rgba(25, 21, 21, 0.196);
         backdrop-filter:blur(10px);
         min-height: 110vh;
-        z-index:10;
+        z-index:25;
     }
     .des-header{
         display:none;
@@ -877,19 +877,19 @@ textarea:focus,input:focus{
 .service-side-menu::-webkit-scrollbar-thumb{
     width:10px;
     height:2px;
-    background-color: #000000;
+    background-color: #f5f4f4;
 }
 .services-item:hover{
     transform: scale(1.04)
 }
-.fa-chevron-right{
+.fa-chevron-right,.fa-chevron-left{
     top:100px;
     left:10px;
     z-index:11;
     border-radius:50%;
     background-color: white;
     padding:15px;
-    display:none;
+    visibility: hidden;
 }
 .button-toggler{
     width:100%;
@@ -898,16 +898,23 @@ textarea:focus,input:focus{
     width:50%;
     padding:20px;
 }
+.service-side-sec-mobview{
+    display:none;
+}
 .service-content{
     gap:30px;
 }
 @media(max-width:567px){
     .services-box{
         width:350px;
-        height:300px;
+        height:400px;
     }
-    .fa-chevron-right{
+    #service-side-sec-mobview,#service-side-sec-desview{
+    display:none;
+}
+    .fa-chevron-right,.fa-chevron-left{
         display:block;
+        visibility: visible;
     }
     .button-toggler{
         width:100%;
@@ -917,7 +924,7 @@ textarea:focus,input:focus{
         display:none;
         height:100%;
         position: fixed;
-        z-index:11;
+        z-index:8;
         background-color: #000000;
         top:90px;
     }
@@ -927,6 +934,6 @@ textarea:focus,input:focus{
     .service-side-menu{
         width: 300px;
         position: relative;
-        height:500px;
+        height:600px;
     }
 }
