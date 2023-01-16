@@ -39,7 +39,6 @@ document.querySelector('#proj2').addEventListener('click', function(){
 document.querySelector('#chevron').addEventListener('click', function(e){
     if(e){
         $('#service-side-sec-mobview').slideToggle(100);
-        document.querySelector('.fa-chevron-right').classList.replace('fa-chevron-right','fa-chevron-left');
     }
 })
 if(window.innerWidth > 700){
@@ -51,7 +50,7 @@ console.log(window.innerWidth)
     
 
 // services sidemenu button section
-const navlink = document.querySelectorAll('.nav-link');
+const navlink = document.querySelectorAll('.nav-link-mob');
 navlink.forEach(function(navbtn){
     navbtn.addEventListener('click', function(e){
         $('#service-side-sec-mobview').slideToggle(100);
