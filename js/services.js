@@ -38,13 +38,11 @@ document.querySelector('#proj2').addEventListener('click', function(){
 })
 document.querySelector('#chevron').addEventListener('click', function(e){
     if(e){
-        $('#service-side-sec-mobview').slideToggle(100);
+        if(document.querySelector('#service-side-sec-desview').style.display ===''){
+            $('#service-side-sec-mobview').slideToggle(100);
+        }
     }
 })
-if(window.innerWidth > 700){
-    $('#service-side-sec-desview').css('display', 'block');
-    $('#service-side-sec-mobview').css('display', 'none');
-}
 
 console.log(window.innerWidth)
     
