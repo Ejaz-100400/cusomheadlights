@@ -66,7 +66,7 @@ document.querySelector('#aboutdoor').addEventListener('click', function(e){
                     function customerdone(){
                         customer++;
                         document.querySelector('#customers').innerHTML = customer + '+';
-                        if(customer==500){
+                        if(customer==700){
                             clearInterval(customers)
                         }
                     }
@@ -75,16 +75,16 @@ document.querySelector('#aboutdoor').addEventListener('click', function(e){
                     function projectsdone(){
                         project++;
                         document.querySelector('#projects').innerHTML = project + '+';
-                        if(project==700){
+                        if(project==1000){
                             clearInterval(projects)
                         }
                     }
                     var years =setInterval(yearsdone,500)
-                    let year=0.1;
+                    let year=1;
                     function yearsdone(){
                         year++;
                         document.querySelector('#years').innerHTML = year + '+';
-                        if(year==5.1){
+                        if(year==6){
                             clearInterval(years)
                         }
                     }

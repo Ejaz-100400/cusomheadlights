@@ -60,7 +60,7 @@ header{
     top: 2px;
   }
 .menu{
-    font-size:20px;
+    font-size:16px;
     font-weight:600;
     margin-left:380px;
     color:white;
@@ -161,23 +161,6 @@ header{
 #pre-img>img{
     width:100%;
 }
-@keyframes zoomlight{
-    0%{
-        opacity:1;
-        filter:drop-shadow(1em 1em 2em white);
-        transform: scale(1.5);
-    }
-    50%{
-        opacity:0.3;
-        filter:drop-shadow(0em 0em 0em white);
-        transform: scale(1.2);
-    }
-    100%{
-        opacity:1;
-        filter:drop-shadow(1em 2em 2em white);
-        transform: scale(1.5);
-    }
-}
 
 /* MAIN SECTION */
 main{
@@ -196,27 +179,100 @@ main{
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    width:45%;
+    width:50%;
     padding-left:50px;
     padding-top: 50px;
-    background-color: #171717;
+    /* background-color: #171717; */
     color:white;
     text-align: left;
+    z-index:4;
 }
+.main-rightcontent{
+    padding-right:90px;
+    padding-top: 50px;
+    z-index:4;
+}
+.box-shadow-section{
+    box-shadow: -10px 20px 120px pink;
+    border-radius:20px;
+    animation:shadowfade 2s ease-in-out infinite;
+    transform: skew(-15deg);
+    filter:grayscale(60%)
+}
+.box-shadow-section:hover{
+    transition: all 0.3s ease-in-out;
+    transform: skew(0deg);
+}
+.box-shadow-section:not(:hover){
+    transition: all 0.3s ease-in-out;
+}
+@keyframes shadowfade{
+    0%{
+        box-shadow: -10px 20px 120px pink;
+        filter:grayscale(60%)
+    }
+    50%{
+        box-shadow: -20px 30px 120px rgb(255, 245, 192);
+        filter:grayscale(0%) brightness(100%)
+    }
+    90%{
+        box-shadow: -20px 30px 120px rgb(249, 249, 249);
+        filter:grayscale(60%)
+    }
+}
+.box-section{
+    width:400px;
+    height:400px;
+    position:relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+     rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+     rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+     rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius:20px;
+    background:url('./../img/jesse-collins-JY1yE4KuE4w-unsplash.jpg');
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+
 .main-leftcontent>h1{
     font-size:64px;
+    z-index:4;
 }
 .main-leftcontent>div>span{
     font-size:24px;
 }
 blockquote{
-    border-left: 1px solid white;
     line-height: 27px;
+    font-size:16px;
+    backdrop-filter:blur(3px);
+    box-shadow:5px 15px 15px rgba(0, 0, 0, 0.342);
+    text-transform: uppercase;
+    border:1px solid transparent;
+    border-radius:20px;
+    font-weight:600;
+    color:#fdfdfd;
+    background-color: rgba(255, 255, 255, 0.203);
+}
+.wave{
+    overflow-x: hidden;
+    bottom:0px;
+    z-index:1;
+    width:100%;
+    height:60%;
 }
 #service-btn{
     font-weight:bold;
 }
-.main-rightcontent{
+.main-section{
+    background-image:linear-gradient(to top right,#090c0ce1,#070a14a2),url('https://images.unsplash.com/photo-1522961832022-ccc489643b86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    background-attachment: fixed;
+}
+/* .main-rightcontent{
     min-height:100vh;
     background:linear-gradient(to top right,rgba(108, 107, 107, 0.436),rgba(16, 14, 14, 0.47),rgba(0, 0, 0, 0.395)),url('../img/jesse-collins-JY1yE4KuE4w-unsplash.jpg'); 
     background-repeat:no-repeat;
@@ -224,7 +280,8 @@ blockquote{
     background-position:right;
     background-attachment: fixed;
     width:60%;
-}
+    height:50%;
+} */
 .soc-box>a{
     border-radius:16px;
     transition:all .1s linear;
@@ -251,21 +308,53 @@ blockquote{
     transform:translateY(-5px);
 }
 
+.glow {
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
 
-@media(max-width:1368px){
+@media(max-width:768px){
     main{
         flex-wrap: wrap;
+        min-height: 80vh;
+    }
+    .wave{
+        display: none;
+    }
+    .main-section{
+        justify-content: center;
+        gap:0px;
     }
     .main-leftcontent{
         width:100%;
-        min-height: 90vh;
         padding-left: 0px;
         text-align: center;
-        background:linear-gradient(to top right,rgba(108, 107, 107, 0.436),rgba(16, 14, 14, 0.692),rgba(0, 0, 0, 0.395)),url('../img/jesse-collins-JY1yE4KuE4w-unsplash.jpg'); 
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position:right;
-    background-attachment: fixed;
+        background-image:linear-gradient(to top right,#090c0cab,#070a14),url('https://images.unsplash.com/photo-1522961832022-ccc489643b86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+        /* background:linear-gradient(to top right,rgba(108, 107, 107, 0.436),rgba(16, 14, 14, 0.639),rgba(0, 0, 0, 0.395)),url('../img/jesse-collins-JY1yE4KuE4w-unsplash.jpg');  */
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 80vh;
+    }
+    blockquote{
+        width:100%;
+        box-shadow:none;
+        background-color: transparent;
+        backdrop-filter:blur(0px);
+        color:white;
+        font-weight:100;
     }
     #service-btn{
        display: none;
@@ -283,31 +372,38 @@ blockquote{
         border-left:none
     }
     .main-rightcontent{
-        display:none;
+       display: none;
     }
-
 }
 
 
 /* ABOUT SECTION */
 .about-section{
     background:linear-gradient(to bottom,black,#171717);
+    overflow: hidden;
 }
+.tab-section{
+    background-color: white;
+    color:black;
+}
+
 .about-ques{
     min-height:100vh;
-    z-index:4;
+    z-index:10;
 }
 .aboutans-left>img{
     width:500px;
+    z-index:7;
 }
 .aboutans-right{
     width:50%;
+    z-index:1;
 }
 .aboutans-right>p{
     line-height:35px;
 }
 .nav-slide{
-    background-color: #0c61f5;
+    background-color: #2e344e;
 }
 .stats-group{
     gap:45px;
@@ -347,6 +443,9 @@ blockquote{
     .aboutans-left>img{
         width:300px;
     }
+    /* .about-para{
+        text-align: center;
+    } */
 }
 
 /* CHOOSE SECTION */
