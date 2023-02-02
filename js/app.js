@@ -120,4 +120,3 @@ document.querySelector('#servicedoor').addEventListener('click', (e) => {
     $('.services-ques').fadeToggle(200);
 })
 
-// CONTACT SECTION

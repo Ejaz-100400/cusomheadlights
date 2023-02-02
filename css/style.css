@@ -704,8 +704,8 @@ color:white;
     0%{
         transform: translateX(0%);
     }
-    100%{
-        transform: translateX(-230%);
+    90%{
+        transform: translateX(-130%);
     }
 }
 
@@ -722,8 +722,8 @@ color:white;
         0%{
             transform: translateX(0%);
         }
-        100%{
-            transform: translateX(-300%);
+        90%{
+            transform: translateX(-400%);
         }
     }
 }
