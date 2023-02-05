@@ -54,7 +54,7 @@ const options={
 // ABOUT SECTION
 document.querySelector('#aboutdoor').addEventListener('click', function(e){
     if(e){
-        $('.aboutans-sec').css('display','block')
+        $('.aboutans-sec').css('display','flex');
         $('.aboutstats-sec').css('display','block')
         const observer=new IntersectionObserver(function(entries,observer){
             entries.forEach(entry=>{
@@ -64,7 +64,7 @@ document.querySelector('#aboutdoor').addEventListener('click', function(e){
                     let customer=1;
                     
                     function customerdone(){
-                        customer++;
+                        customer=customer+1;
                         document.querySelector('#customers').innerHTML = customer + '+';
                         if(customer==700){
                             clearInterval(customers)
@@ -73,7 +73,7 @@ document.querySelector('#aboutdoor').addEventListener('click', function(e){
                     var projects =setInterval(projectsdone,3)
                     let project=1;
                     function projectsdone(){
-                        project++;
+                        project=project+1;
                         document.querySelector('#projects').innerHTML = project + '+';
                         if(project==1000){
                             clearInterval(projects)
