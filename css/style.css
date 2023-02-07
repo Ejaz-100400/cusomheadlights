@@ -304,6 +304,10 @@ blockquote{
     justify-content: space-between;
     background-attachment: fixed;
 }
+.main-para{
+    line-height:42px;
+    font-size: 18px;
+}
 /* .main-rightcontent{
     min-height:100vh;
     background:linear-gradient(to top right,rgba(108, 107, 107, 0.436),rgba(16, 14, 14, 0.47),rgba(0, 0, 0, 0.395)),url('../img/jesse-collins-JY1yE4KuE4w-unsplash.jpg'); 
@@ -1000,6 +1004,9 @@ color:white;
     }
 }
 
+.service-para p{
+    line-height: 45px;
+}
 
 @media(max-width:576px){
 
