@@ -343,6 +343,10 @@ blockquote{
     color:#ed1b1b;
     transform:translateY(-5px);
 }
+.soc-box:nth-child(4)>a:hover{
+    color:#48ff10;
+    transform:translateY(-5px);
+}
 
 .glow {
     color: #fff;
@@ -741,6 +745,9 @@ color:white;
     transform:scale(1.26);
     transition: all 0.2s ease-in-out;
 }
+.nav-link:hover{
+    color:white;
+}
 .nav-pills .nav-link.active{
     background-color: #e6f50c;
     color:black;
@@ -811,8 +818,8 @@ color:white;
    }
    
    .call-btn:hover::before, .call-btn:hover::after {
-    height: 410px;
-    width: 410px;
+    height: 610px;
+    width: 610px;
    }
    
    .call-btn:hover {
@@ -824,15 +831,13 @@ color:white;
    .buttons {
     display: flex;
     justify-content: space-around;
-    top: 20px;
-    left: 20px;
+
   }
   
   .buttons button {
-    width: 200px;
+    width: 250px;
     height: 40px;
-    background-color:#11efa9;
-    margin: 20px;
+    background-color:hsl(161, 87%, 50%);
     color: black;
     position: relative;
     overflow: hidden;
@@ -967,7 +972,7 @@ color:white;
     transition: all 0s ease;
     content: attr(data-start);
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-150%);
     animation: start 0.3s ease;
     animation-fill-mode: forwards;
   }
@@ -1024,8 +1029,22 @@ color:white;
             transform: translateX(-400%);
         }
     }
+    .call-btn{
+        width:90%;
+    }
+    .buttons{
+        position:relative;
+        left:0px;
+    }
+    .buttons button{
+        width:400px;
+    }
 }
-
+@media(max-width:476px){
+    .buttons button{
+        width:303px;
+    }
+}
 /* FOOTER-SECTION */
 footer{
     z-index:5;
@@ -1274,19 +1293,30 @@ textarea:focus,input:focus{
 .service-side-menu::-webkit-scrollbar-thumb{
     width:10px;
     height:2px;
-    background-color: #000000;
+    background-color: #11efa9;
 }
 .services-item:hover{
     transform: scale(1.04)
 }
-.fa-chevron-right,.fa-chevron-left{
+.fa-chevron-right{
     top:90px;
     left:10px;
     z-index:11;
     border-radius:50%;
     background-color: white;
-    padding:15px;
-    visibility: hidden;
+    padding:8px 14px;
+    display: none;
+    cursor: pointer;
+}
+.fa-chevron-left{
+    top:90px;
+    left:10px;
+    z-index:11;
+    border-radius:50%;
+    background-color: white;
+    padding:8px 14px;
+    cursor: pointer;
+    display:none;
 }
 .call-btn-toggler{
     width:100%;
@@ -1295,23 +1325,21 @@ textarea:focus,input:focus{
     width:50%;
     padding:20px;
 }
-#service-side-sec-mobview{
-    display:none;
-}
 .service-content{
     gap:30px;
 }
-@media(max-width:567px){
+@media(max-width:967px){
     .services-box{
         width:350px;
         height:400px;
     }
     #service-side-sec-desview{
-    display:none;
+        position:fixed;
+        top:80px;
+        display:none;
 }
-    .fa-chevron-right,.fa-chevron-left{
-        display:block;
-        visibility: visible;
+    .fa-chevron-right{
+        display: block;
     }
     .service-side-sec-container{
         background-color: #0460CC;
@@ -1322,8 +1350,6 @@ textarea:focus,input:focus{
     }
     .service-side-sec{
         width:450px;
-        display:none;
-        height:100%;
         position: fixed;
         z-index:8;
         background-color: #000000;
@@ -1349,7 +1375,10 @@ textarea:focus,input:focus{
         height:600px;
     }
     .service-side-sec{
-        width:350px;
+        width:450px;
+    }
+    #service-side-sec-desview{
+        width:100%;
     }
 }
 

@@ -36,15 +36,20 @@ document.querySelector('#proj1').addEventListener('click', function(){
 document.querySelector('#proj2').addEventListener('click', function(){
     const element = document.querySelectorAll('.services-item')[1];
 })
-document.querySelector('#chevron').addEventListener('click', function(e){
-    if(e){
-        if(document.querySelector('#service-side-sec-desview').style.display ===''){
-            $('#service-side-sec-mobview').slideToggle(100);
-        }
+document.querySelector('body').addEventListener('click', function(e){
+    if (e.target.classList.contains('rotate')) {
+        $('#service-side-sec-desview').slideToggle(100)
+        e.target.style.transform='rotate(180deg)';
+        e.target.classList.toggle('rotate-again')
+        e.target.classList.toggle('rotate')
+    } else if (e.target.classList.contains('rotate-again')) {
+        e.target.style.transform='rotate(0deg)';
+        $('#service-side-sec-desview').slideToggle(100)
+        e.target.classList.toggle('rotate-again')
+        e.target.classList.toggle('rotate')
     }
-})
+});
 
-console.log(window.innerWidth)
     
 
 // services sidemenu button section
@@ -55,74 +60,3 @@ navlink.forEach(function(navbtn){
         document.querySelector('.services-section').scrollIntoView();
     });
 });
-
-
-const movie={
-    id:1,
-    moviename:'Vikram',
-    lang:'Tamil',
-    release:2022
-}
-
-const {...restoperate}=movie;
-console.log(restoperate);
-// returns {id: 1, moviename: 'Vikram', lang: 'Tamil', release: 2022}
-
-
-
-
-
-// function printPersonInfo({ moviename, lang, release }) {
-//     console.log(`Moviename: ${moviename}, Language: ${lang}, Release Year: ${release}`);
-//   }
-// printPersonInfo(movie);
-// returns Moviename: Vikram, Language: Tamil, Release Year: 2022
-
-
-
-
-
-
-// const { moviename:name , lang:movielang , release: movierelease } =movie
-// console.log(movielang);
-// returns Tamil
-
-
-
-// let person = {
-//     name: "Raj",
-//     speak: function() {
-//       console.log(`My name is ${this.name}.`);
-//     }
-//   };
-//   person.speak(); //My name is Raj
-
-
-
-// let person = { name: "Raj" };
-// let speak = function() {
-//   console.log(`My name is ${this.name}.`);
-// }.bind(person);
-// speak(); //My name is Raj
-
-// function Person(name) {
-//     this.name = name;
-//     this.speak = function() {
-//       console.log(`My name is ${this.name}.`);
-//     }
-//   }
-//   let person = new Person("Raj");
-//   person.speak();  //My name is Raj
-
-let person = {
-    name: "Kumar",
-    friends: ['Raj', 'Ram'],
-    speak: function() {
-      this.friends.forEach(friend => {
-          console.log(`${this.name} says hi to ${friend}.`);
-      });
-    }
-  };
-  person.speak();
-//  Kumar says hi to Raj.
-//  Kumar says hi to Ram.
