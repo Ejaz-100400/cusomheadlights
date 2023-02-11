@@ -675,13 +675,6 @@ color:white;
         line-height:25px;
         text-align:justify;
     }
-    .fa-chevron-left,.fa-chevron-right{
-        margin-top:1rem;
-        
-    }
-    .fa-chevron-right{
-        margin-right:-2rem;
-    }
     #box2{
         margin-left:0px;
     }
@@ -791,9 +784,11 @@ color:white;
     text-transform: uppercase;
     color: white;
     z-index: 1;
-    width:200px;
+    font-weight:400;
    }
-   
+   .call-btn:active{
+    transform: translateY(-2px);
+   }
    .call-btn::before, .call-btn::after {
     content: '';
     display: block;
@@ -1030,7 +1025,7 @@ color:white;
         }
     }
     .call-btn{
-        width:90%;
+        width:200px;
     }
     .buttons{
         position:relative;
@@ -1262,7 +1257,7 @@ textarea:focus,input:focus{
     animation: shine 1.2s  ease-in;
 }
 .service-title{
-    font-size:45px;
+    font-size:35px;
 }
 .service-para{
     line-height:35px;
@@ -1298,26 +1293,8 @@ textarea:focus,input:focus{
 .services-item:hover{
     transform: scale(1.04)
 }
-.fa-chevron-right{
-    top:90px;
-    left:10px;
-    z-index:11;
-    border-radius:50%;
-    background-color: white;
-    padding:8px 14px;
-    display: none;
-    cursor: pointer;
-}
-.fa-chevron-left{
-    top:90px;
-    left:10px;
-    z-index:11;
-    border-radius:50%;
-    background-color: white;
-    padding:8px 14px;
-    cursor: pointer;
-    display:none;
-}
+
+
 .call-btn-toggler{
     width:100%;
 }
@@ -1335,11 +1312,7 @@ textarea:focus,input:focus{
     }
     #service-side-sec-desview{
         position:fixed;
-        top:80px;
         display:none;
-}
-    .fa-chevron-right{
-        display: block;
     }
     .service-side-sec-container{
         background-color: #0460CC;
@@ -1381,6 +1354,100 @@ textarea:focus,input:focus{
         width:100%;
     }
 }
+
+
+
+/* services 2  */
+.services-main-sec{
+    min-height: 120vh;
+    background-color: #181a19;
+    padding-top:150px;
+}
+.services-section-mobile{
+    display: none;
+    min-height: 120vh;
+    background-color: #181a19;
+    padding-top:150px;
+}
+.ser-item{
+    height:350px;
+}
+.ser-item {
+    flex-direction: row;
+  }
+
+.swiper-item{
+    width:50%;
+}
+.service-title-sec{
+    width:50%;
+}
+.service-bord{
+    height:10px;
+    background-color: #0460CC;
+    animation:spin-color 1.5s ease-in infinite alternate;
+}
+
+#detail1,#detail2,#detail3{
+    display: none;
+}
+.service-detail-section{
+    min-height:100vh;
+    background-color: #00000060;
+    z-index:20;
+    top:0px;
+    display: none;
+}
+.toggle-dis{
+    display: none;
+}
+.service-detail-main{
+    position:absolute;
+    width:50%;
+    height:200px;
+    top:50%;
+    left:50%;
+    z-index:20;
+    background-color: #0460CC;
+    transform: translate(-50%, -50%);
+}
+@keyframes spin-color {
+    0%{
+        background-color: #11efa9;
+        filter:grayscale(100%)
+    }
+    50%{
+        background-color: rgb(230, 221, 221);
+        box-shadow:2px 2px 1px white;
+    }
+    100%{
+        background-color: rgb(235, 33, 33);
+        filter:grayscale(100%)
+    }
+}
+
+@media(max-width:967px){
+    .ser-item{
+        height:100%;
+    }
+    .swiper-item{
+        width:100%;
+    }
+    .service-title-sec{
+        width:100%;
+    }
+    .services-section{
+        display:none;
+    }
+    .services-section-mobile{
+        display:block;
+    }
+}
+
+
+
+
+
 
 
 /* PRODUCTS SECTION */
@@ -1434,3 +1501,6 @@ textarea:focus,input:focus{
         width:200px;
     }
 }
+
+
+

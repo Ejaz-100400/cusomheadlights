@@ -60,3 +60,74 @@ navlink.forEach(function(navbtn){
         document.querySelector('.services-section').scrollIntoView();
     });
 });
+
+
+
+// DISPLAY AND HIDE SERVICE DETAIL IN MOBILE VIEW 
+
+// document.querySelector('#click1').addEventListener('click', (e)=>{
+//     document.querySelector('.service-detail-section').style.display='block';
+//     document.querySelector('#detail1').style.display='block';
+// })
+// document.querySelector('#click2').addEventListener('click', (e)=>{
+//     document.querySelector('.service-detail-section').style.display='block';
+//     document.querySelector('#detail2').style.display='block';
+// })
+// document.querySelector('#click3').addEventListener('click', (e)=>{
+//     document.querySelector('.service-detail-section').style.display='block';
+//     document.querySelector('#detail3').style.display='block';
+// })
+
+// document.querySelector('.fa-xmark').addEventListener('click', (e)=>{
+//     document.querySelector('.service-detail-section').style.display='none';
+//     document.querySelector('#detail1').classList.toggle('.toggle-dis');
+//     document.querySelector('#detail2').classList.toggle('.toggle-dis');
+//     document.querySelector('#detail3').classList.toggle('.toggle-dis');
+// })
+
+document.getElementById("click1").onclick = function() {
+    closeContainers();
+    document.querySelector('.service-detail-section').style.display='block';
+    document.querySelector('#detail1').style.display='block';
+  };
+  
+  document.getElementById("click2").onclick = function() {
+    closeContainers();
+    document.querySelector('.service-detail-section').style.display='block';
+    document.querySelector('#detail2').style.display='block';
+  };
+  document.getElementById("click3").onclick = function() {
+    closeContainers();
+    document.querySelector('.service-detail-section').style.display='block';
+    document.querySelector('#detail3').style.display='block';
+  };
+  document.getElementById("click4").onclick = function() {
+    closeContainers();
+    document.querySelector('.service-detail-section').style.display='block';
+    document.querySelector('#detail4').style.display='block';
+  };
+  document.getElementById("click5").onclick = function() {
+    closeContainers();
+    document.querySelector('.service-detail-section').style.display='block';
+    document.querySelector('#detail5').style.display='block';
+  };
+  document.getElementById("click6").onclick = function() {
+    closeContainers();
+    document.querySelector('.service-detail-section').style.display='block';
+    document.querySelector('#detail6').style.display='block';
+  };
+  document.getElementById("click7").onclick = function() {
+    closeContainers();
+    document.querySelector('.service-detail-section').style.display='block';
+    document.querySelector('#detail7').style.display='block';
+  };
+  function closeContainers() {
+    var containers = document.getElementsByClassName("service-detail-main");
+    for (var i = 0; i < containers.length; i++) {
+      containers[i].style.display = "none";
+    }
+  }
+  document.querySelector('.fa-xmark').addEventListener('click', (e)=>{
+    document.querySelector('.service-detail-section').style.display='none';
+    closeContainers(); //
+  })
