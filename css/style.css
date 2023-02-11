@@ -1007,7 +1007,17 @@ color:white;
 .service-para p{
     line-height: 45px;
 }
-
+@media(max-width:976px){
+    #msg-service-mob{
+        width:100%;
+    }
+    .buttons{
+        width:50%;
+    }
+    .call-btn{
+        font-size:14px;
+    }
+}
 @media(max-width:576px){
 
     .serviceans-sec{
@@ -1403,13 +1413,25 @@ textarea:focus,input:focus{
 }
 .service-detail-main{
     position:absolute;
-    width:50%;
-    height:200px;
+    width:80%;
+    height:50%;
     top:50%;
     left:50%;
     z-index:20;
-    background-color: #0460CC;
+    background-color: #131415;
     transform: translate(-50%, -50%);
+    border:3px solid #11efa9;
+    border-radius:6px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color:white;
+}
+.service-detail-main::-webkit-scrollbar{
+    width:5px;
+    background-color: #090c0ce1;
+}
+.service-detail-main::-webkit-scrollbar-thumb{
+    background-color: #11efa9;
 }
 @keyframes spin-color {
     0%{
