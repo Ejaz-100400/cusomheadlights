@@ -787,7 +787,7 @@ color:white;
     color:white;
 }
 .nav-pills .nav-link.active{
-    background-color: #e6f50c;
+    background-color: #f7e30c;
     color:black;
 }
 .car-brands{
@@ -1199,12 +1199,22 @@ iframe{
     min-height:110vh;
     padding-top:200px;
     padding-left:30px;
-    background: linear-gradient(to top right,rgba(4, 4, 4, 0.338),rgba(15, 13, 13, 0.361)), url('https://www.mercedes-benz.co.nz/passengercars/mercedes-benz-cars/models/c-class/coupe/explore/intelligent-drive-technologies/multibeam-led/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide_3cfb/image.MQ6.12.20180725123802.jpeg');
+    background: linear-gradient(to top right,rgba(4, 4, 4, 0.623),rgba(15, 13, 13, 0.299)), url('https://cdn.bmwblog.com/wp-content/uploads/2020/03/BMW-Laser-light-detail-on-G15-8-Series.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:  center;
+    background-attachment: fixed;
 }
 .form-sec{
     width:70%;
+}
+.form-control{
+    background-color: transparent !important;
+    color:white !important;
+    
+}
+label{
+    color:white !important;
 }
 .form-floating{
     margin:30px 0px;
@@ -1273,15 +1283,17 @@ textarea:focus,input:focus{
 .testimonial-item{
     color:white;
     height:300px;
-    font-size:30px;
+    font-size:25px;
     text-align:center;
-    font-weight:500;
+    font-weight:400;
+    font-style: italic;
     line-height: 50px;
     backdrop-filter:blur(5px);
     background-color: rgba(255, 255, 255, 0.235);
     border-radius:20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+.te
 .swiper-pagination-bullet{
     background-color: #ffffff !important;
   }
