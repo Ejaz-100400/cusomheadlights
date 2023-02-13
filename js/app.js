@@ -7,10 +7,14 @@ document.querySelector('.fa-bars').addEventListener('click', () => {
 document.querySelector('.responsivemenu').addEventListener('click', () => {
     $('.responsivemenu').fadeToggle(200);
 })
-
+document.querySelector('.customheadlight').style.display = 'none';
+// Preloader
 setTimeout(function(){
-    $('#preloader').fadeToggle();
+    $('#preloader').fadeToggle(100);
+    document.querySelector('.customheadlight').style.display = 'block';
 },2000)
+
+
 document.querySelector('.fa-phone').addEventListener('click', () => {
     $('.fa-phone').fadeToggle(200);
 })
@@ -55,14 +59,15 @@ const options={
 document.querySelector('#aboutdoor').addEventListener('click', function(e){
     if(e){
         $('.aboutans-sec').css('display','flex');
-        $('.aboutstats-sec').css('display','block')
         const observer=new IntersectionObserver(function(entries,observer){
             entries.forEach(entry=>{
                 if(entry.isIntersecting==true){
+                    $('.aboutstats-sec').css('display','block')
+                    document.querySelectorAll('.statsbox').forEach((statbox)=>{
+                                        statbox.classList.add('xyz-in')
+                                    })
                     var customers =setInterval(customerdone,3)
-        
                     let customer=1;
-                    
                     function customerdone(){
                         customer=customer+1;
                         document.querySelector('#customers').innerHTML = customer + '+';
@@ -99,6 +104,11 @@ document.querySelector('#aboutdoor').addEventListener('click', function(e){
                     }
 
                 }
+                else{
+                    document.querySelectorAll('.statsbox').forEach((statbox)=>{
+                        statbox.classList.remove('xyz-in')
+                    })
+                }
             })
         })
         observer.observe(statsec)    
@@ -120,3 +130,15 @@ document.querySelector('#servicedoor').addEventListener('click', (e) => {
     $('.services-ques').fadeToggle(200);
 })
 
+
+// const statsdesc= document.querySelector('.stats-group')
+// const observer=new IntersectionObserver(function(entries,observer){
+//     entries.forEach(entry=>{
+//         if(entry.isIntersecting==true){
+//             document.querySelectorAll('.statsbox').forEach((statbox)=>{
+//                 statbox.classList.add('square')
+//             })
+//         }
+//     })
+// })
+// observer.observe(statsdesc)    

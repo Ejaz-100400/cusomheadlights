@@ -276,9 +276,19 @@ main{
     background:url('./../img/jesse-collins-JY1yE4KuE4w-unsplash.jpg');
     background-size: cover;
     background-position:center;
-    background-attachment: fixed;
+    background-attachment: fixed;   
 }
-
+@keyframes bounce3d{
+    0%{
+        transform: translateY(-15px) rotate3d(1,6,1,40deg);
+    }
+    100%{
+        transform:translateY(15px) rotate3d(1,4,1,0deg);
+    }
+}
+.bounce3d{
+    animation:bounce3d 5s ease-in infinite alternate;
+}
 .main-leftcontent>h1{
     font-size:64px;
     z-index:4;
@@ -334,6 +344,8 @@ blockquote{
     transition:all .1s linear;
     color:white;
 }
+
+
 .soc-box:hover{
     transform:translateY(-5px);
     transition:all 0.2s ease-in-out;
@@ -358,7 +370,6 @@ blockquote{
     color:#48ff10;
     transform:translateY(-5px);
 }
-
 .glow {
     color: #fff;
     text-align: center;
@@ -441,9 +452,19 @@ blockquote{
 }
 
 .about-ques{
-    min-height:100vh;
+    height:100%;
+    width:100%;
+    width:100%;
     z-index:10;
+    background-color: #171717;
 }
+.about-ques>div{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    }
 .aboutans-left>img{
     width:300px;
     z-index:7;
@@ -468,7 +489,10 @@ blockquote{
     background-size: cover;
     background-position: center center;
     background-attachment:fixed;
-    width:50%;
+    width:100%;
+}
+.car-service-img{
+    width:600px;
 }
 .statsbox{
     /* background-color: rgba(0, 0, 0, 0.018); */
@@ -523,6 +547,9 @@ blockquote{
     }
     .about-statssec{
         width:100%;
+    }
+    .car-service-img{
+        width: 100%;
     }
     /* .about-para{
         text-align: center;
@@ -717,7 +744,7 @@ color:white;
     .choose-ques,.about-ques,.services-ques,#counter-desc{
         display: none;
     }
-    .chooseans-sec,.serviceans-sec,.service-img,#counter-mobile,.car-brands{
+    .aboutans-sec,.chooseans-sec,.serviceans-sec,.service-img,#counter-mobile,.car-brands{
         display: block;
     }
 }
@@ -1048,7 +1075,9 @@ color:white;
    
 }
 @media(max-width:576px){
-
+    #tab-content{
+        display: block;
+    }
     .serviceans-sec{
         background-color: #171717;
     }
@@ -1078,9 +1107,9 @@ color:white;
     .buttons button{
         width:303px;
     }
-    .service-detail-main{
+    /* .service-detail-main{
         height:70%;
-    }
+    } */
     .service-para p{
         font-size:15px;
     }
