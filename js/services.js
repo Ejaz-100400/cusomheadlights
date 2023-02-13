@@ -6,11 +6,12 @@ document.querySelector('.fa-bars').addEventListener('click', () => {
 document.querySelector('.responsivemenu').addEventListener('click', () => {
     $('.responsivemenu').fadeToggle(200);
 })
+document.querySelector('.customheadlight').style.display = 'none';
 // Preloader
 setTimeout(function(){
     $('#preloader').fadeToggle();
+    document.querySelector('.customheadlight').style.display = 'block';
 },2000)
-
 
 
 window.onscroll=function(){
@@ -65,60 +66,55 @@ navlink.forEach(function(navbtn){
 
 // DISPLAY AND HIDE SERVICE DETAIL IN MOBILE VIEW 
 
-// document.querySelector('#click1').addEventListener('click', (e)=>{
-//     document.querySelector('.service-detail-section').style.display='block';
-//     document.querySelector('#detail1').style.display='block';
-// })
-// document.querySelector('#click2').addEventListener('click', (e)=>{
-//     document.querySelector('.service-detail-section').style.display='block';
-//     document.querySelector('#detail2').style.display='block';
-// })
-// document.querySelector('#click3').addEventListener('click', (e)=>{
-//     document.querySelector('.service-detail-section').style.display='block';
-//     document.querySelector('#detail3').style.display='block';
-// })
-
-// document.querySelector('.fa-xmark').addEventListener('click', (e)=>{
-//     document.querySelector('.service-detail-section').style.display='none';
-//     document.querySelector('#detail1').classList.toggle('.toggle-dis');
-//     document.querySelector('#detail2').classList.toggle('.toggle-dis');
-//     document.querySelector('#detail3').classList.toggle('.toggle-dis');
-// })
 
 document.getElementById("click1").onclick = function() {
     closeContainers();
     document.querySelector('.service-detail-section').style.display='block';
+    document.querySelectorAll('.service-detail-main')[0].classList.add('xyz-in')
+    document.querySelectorAll('.service-detail-main')[0].classList.remove('xyz-out')
     document.querySelector('#detail1').style.display='block';
   };
   
   document.getElementById("click2").onclick = function() {
     closeContainers();
     document.querySelector('.service-detail-section').style.display='block';
+    document.querySelectorAll('.service-detail-main')[1].classList.add('xyz-in')
+    document.querySelectorAll('.service-detail-main')[1].classList.remove('xyz-out')
     document.querySelector('#detail2').style.display='block';
   };
   document.getElementById("click3").onclick = function() {
     closeContainers();
     document.querySelector('.service-detail-section').style.display='block';
+    document.querySelectorAll('.service-detail-main')[2].classList.add('xyz-in')
+    document.querySelectorAll('.service-detail-main')[2].classList.remove('xyz-out')
     document.querySelector('#detail3').style.display='block';
   };
   document.getElementById("click4").onclick = function() {
     closeContainers();
     document.querySelector('.service-detail-section').style.display='block';
+    document.querySelectorAll('.service-detail-main')[3].classList.add('xyz-in')
+    document.querySelectorAll('.service-detail-main')[3].classList.remove('xyz-out')
     document.querySelector('#detail4').style.display='block';
   };
   document.getElementById("click5").onclick = function() {
     closeContainers();
     document.querySelector('.service-detail-section').style.display='block';
+    document.querySelectorAll('.service-detail-main')[4].classList.add('xyz-in')
+    document.querySelectorAll('.service-detail-main')[4].classList.remove('xyz-out')
     document.querySelector('#detail5').style.display='block';
   };
   document.getElementById("click6").onclick = function() {
     closeContainers();
     document.querySelector('.service-detail-section').style.display='block';
+    document.querySelectorAll('.service-detail-main')[5].classList.add('xyz-in')
+    document.querySelectorAll('.service-detail-main')[5].classList.remove('xyz-out')
     document.querySelector('#detail6').style.display='block';
   };
   document.getElementById("click7").onclick = function() {
     closeContainers();
     document.querySelector('.service-detail-section').style.display='block';
+    document.querySelectorAll('.service-detail-main')[6].classList.add('xyz-in')
+    document.querySelectorAll('.service-detail-main')[6].classList.remove('xyz-out')
     document.querySelector('#detail7').style.display='block';
   };
   function closeContainers() {
@@ -129,5 +125,75 @@ document.getElementById("click1").onclick = function() {
   }
   document.querySelector('.fa-xmark').addEventListener('click', (e)=>{
     document.querySelector('.service-detail-section').style.display='none';
+    document.querySelector('.service-detail-main').classList.add('xyz-out')
+    document.querySelector('.service-detail-main').classList.remove('xyz-in')
     closeContainers(); //
   })
+
+  const statsec=document.querySelector('.about-statssec');
+  const options={
+      threshold:1,
+  }
+  // ABOUT SECTION
+  document.querySelector('#aboutdoor').addEventListener('click', function(e){
+      if(e){
+          $('.aboutans-sec').css('display','flex');
+          $('.aboutstats-sec').css('display','block')
+          const observer=new IntersectionObserver(function(entries,observer){
+              entries.forEach(entry=>{
+                  if(entry.isIntersecting==true){
+                      var customers =setInterval(customerdone,3)
+          
+                      let customer=1;
+                      
+                      function customerdone(){
+                          customer=customer+1;
+                          document.querySelector('#customers').innerHTML = customer + '+';
+                          if(customer==700){
+                              clearInterval(customers)
+                          }
+                      }
+                      var projects =setInterval(projectsdone,3)
+                      let project=1;
+                      function projectsdone(){
+                          project=project+1;
+                          document.querySelector('#projects').innerHTML = project + '+';
+                          if(project==1000){
+                              clearInterval(projects)
+                          }
+                      }
+                      var years =setInterval(yearsdone,500)
+                      let year=1;
+                      function yearsdone(){
+                          year++;
+                          document.querySelector('#years').innerHTML = year + '+';
+                          if(year==6){
+                              clearInterval(years)
+                          }
+                      }
+                      var ratings =setInterval(ratingsdone,1000)
+                      let rating=1;
+                      function ratingsdone(){
+                          rating++;
+                          document.querySelector('#ratings').innerHTML = rating + '+';
+                          if(rating==5){
+                              clearInterval(ratings)
+                          }
+                      }
+  
+                  }
+              })
+          })
+          observer.observe(statsec)    
+      }
+  
+      $('.about-ques').fadeToggle(200);
+  });
+  
+
+  let whatsappBtns = document.querySelectorAll('.buttons');
+  whatsappBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      window.open('https://api.whatsapp.com/send?phone=919789868288', '_blank');
+    });
+  });

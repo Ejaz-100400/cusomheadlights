@@ -52,10 +52,12 @@
                 </ul>
             </div>
             <a href="./contact.html" class="submit-btn text-decoration-none d-flex gap-2 align-items-center">
-                Contact Us <i class="fa-solid fa-phone"></i>
+                Review Us <i class="fa-solid fa-star"></i>
               </a>
         </header>
-        <i class="fa-solid fa-phone position-fixed fa-2x" id="resp-contact"></i>
+        <a href="tel:+91 9789868288" class="text-decoration-none">
+            <i class="fa-solid fa-phone position-fixed fa-2x text-dark" id="resp-contact"></i>
+        </a>
         <!-- Header res -->
         <header class="resp-header  align-items-center justify-content-between  position-fixed w-100 p-2">
             <img src="./img/cropped-Dark-roads-no-more-300x151-removebg-preview.png" alt="" class="resp-img">
@@ -87,16 +89,18 @@
                     </li>
                     <li class="menu-item mt-2">
                         <a href="./contact.html" class="text-decoration-none">
-                            Contact Us
+                            Review Us <i class="fa-solid fa-star"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
         <!-- services section -->
-        <main class="services-section  position-relative">
-            <section class="button-toggler position-relative w-100 d-flex">
-                <div class="nav service-side-sec nav-pills side-pad" id="service-side-sec-desview">
+
+        <main class="services-section-pg  position-relative">
+            <div class="service-bord"></div>
+            <section class="button-toggler position-relative w-100 d-flex" xyz="fade small stagger-4">
+                <div class="nav service-side-sec nav-pills side-pad square xyz-in" id="service-side-sec-desview">
                     <div class="service-side-menu d-flex flex-column gap-3">
                         <button class="nav-link gap-5  w-100 d-flex align-items-center text-start border p-4  active"
                         data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button" id="proj1" aria-current="page" >
@@ -127,9 +131,29 @@
                         <h5 class="m-0"><img src="./img/car-lights.png" width="30" alt="" id="">DRL Modification</h5>
                     </button>
                     </div>
+                    <div class="service-bord"></div>
+                    <div class="w-100 service-gallery">
+                        <div class="swiper mySwiper py-5">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide" data-swiper-autoplay="2000">
+                                <div class="services-item tab-pane fade show active" 
+                                style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                              </div>
+                              <div class="swiper-slide" data-swiper-autoplay="2000">
+                                <div class="services-item tab-pane fade show active" 
+                                style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                              </div>
+                              <div class="swiper-slide" data-swiper-autoplay="2000">
+                                <div class="services-item tab-pane fade show active" 
+                                style="background-image:linear-gradient(to top,rgba(54, 49, 49, 0.797),rgba(0, 0, 0, 0),rgba(56, 54, 54, 0.824)),url(https://media.istockphoto.com/id/475667431/photo/car-headlight-cleaning-with-power-buffer-machine.jpg?s=612x612&w=0&k=20&c=vHK42xmIDVsAaqV5fumW6h8nEysWBnhRTGDUY3_xebc=);"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-content-sec">
-                    <div class="tab-content w-100" id="">
+
+                <div class="service-content-sec square xyz-in">
+                    <div class="tab-content w-100" id="" >
                         <div class="tab-pane fade show active" id="tab-pane-1">
                             <!-- Headlight-cleaning -->
                             <div class="d-flex flex-wrap gap-3">
@@ -152,9 +176,13 @@
                                 <div class="d-flex flex-column gap-3 mt-5" id="disp headlightclean">
                                     <h1 class="service-title">HEADLIGHT CLEANING</h1>
                                     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between">
-                                        <button class="p-2 call-btn">Reach out by phone</button>
+                                        <button class="p-2 call-btn">
+                                            <a href="tel:+91 9789868288" class="text-decoration-none">
+                                            Reach out by phone
+                                        </a>
+                                        </button>
                                         <div class="buttons">
-   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button>
+   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button>
 </div>
                                     </div>
                                 </div>
@@ -190,10 +218,14 @@
                                 <div class="d-flex flex-column gap-3 mt-5" id="disp projectorfit">
                                     <h1 class="service-title"> PROJECTOR FITTING</h1>
                                     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between">
-                                        <button class="p-2 call-btn">Reach out by phone</button>
+                                        <button class="p-2 call-btn">
+                                            <a href="tel:+91 9789868288" class="text-decoration-none">
+                                            Reach out by phone
+                                        </a>
+                                        </button>
                                         <div class="buttons">
                                             <button class="btn">
-                                                <span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p>
+                                                <span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p>
                                             </button>
                                         </div>
                                     </div>
@@ -231,9 +263,13 @@
                                 <div class="d-flex flex-column gap-3 mt-5">
                                     <h1 class="service-title">FOG LAMPS</h1>
                                     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between">
-                                        <button class="p-2 call-btn">Reach out by phone</button>
+                                        <button class="p-2 call-btn">
+                                            <a href="tel:+91 9789868288" class="text-decoration-none">
+                                            Reach out by phone
+                                        </a>
+                                        </button>
                                         <div class="buttons">
-   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button>
+   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button>
 </div>
                                     </div>
                                 </div>
@@ -270,9 +306,13 @@
                                 <div class="d-flex flex-column gap-3 mt-5">
                                     <h1 class="service-title">CAR SYSTEMS & SPEAKERS</h1>
                                     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between">
-                                        <button class="p-2 call-btn">Reach out by phone</button>
+                                        <button class="p-2 call-btn">
+                                            <a href="tel:+91 9789868288" class="text-decoration-none">
+                                            Reach out by phone
+                                        </a>
+                                        </button>
                                         <div class="buttons">
-   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button>
+   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button>
 </div>
                                     </div>
                                 </div>
@@ -311,9 +351,13 @@
                                 <div class="d-flex flex-column gap-3 mt-5">
                                     <h1 class="service-title">BAR LIGHTS</h1>
                                     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between">
-                                        <button class="p-2 call-btn">Reach out by phone</button>
+                                        <button class="p-2 call-btn">
+                                            <a href="tel:+91 9789868288" class="text-decoration-none">
+                                            Reach out by phone
+                                        </a>
+                                        </button>
                                         <div class="buttons">
-   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button>
+   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button>
 </div>
                                 </div>
                             </div>
@@ -350,9 +394,13 @@
                                 <div class="d-flex flex-column gap-3 mt-5">
                                     <h1 class="service-title">HEADLIGHT WIRING</h1>
                                     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between">
-                                        <button class="p-2 call-btn">Reach out by phone</button>
+                                        <button class="p-2 call-btn">
+                                            <a href="tel:+91 9789868288" class="text-decoration-none">
+                                            Reach out by phone
+                                        </a>
+                                        </button>
                                         <div class="buttons">
-   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button>
+   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button>
 </div>
                                     </div>
                                 </div>
@@ -390,9 +438,13 @@
                                 <div class="d-flex flex-column gap-3 mt-5">
                                     <h1 class="service-title">DRL MODIFICATION</h1>
                                     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between">
-                                        <button class="p-2 call-btn">Reach out by phone</button>
+                                        <button class="p-2 call-btn">
+                                            <a href="tel:+91 9789868288" class="text-decoration-none">
+                                            Reach out by phone
+                                            </a>
+                                        </button>
                                         <div class="buttons">
-   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button>
+   <button class="btn"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button>
 </div>
                                     </div>
                                 </div>
@@ -410,128 +462,125 @@
                     </div>
                 </div>
             </section>
+            <div class="service-bord"></div>
         </main>
 
         <!-- SERVICES MOBILE SECTION -->
         <main class="services-section-mobile  position-relative">
             <!-- SERVICE DETAIL SECTION -->
             <div class="service-detail-section position-fixed w-100 fa-1x">
-                <i class="fa-solid fa-xmark position-absolute text-light"></i>
-                <div class="">
-                    <div class="service-detail-main p-3" id="detail1">
-                        <h1 id="text-light">Service 1</h1>
-                        <div class="d-flex  align-items-center gap-2">
-                             <button class="p-2 call-btn w-50">Reach out by phone</button>
+                <i class="fa-solid fa-xmark fa-1x position-absolute"></i>
+                <div class="" xyz="fade small stagger-0">
+                    <div class="service-detail-main   square   p-3" id="detail1">
+                        <h1 id="text-light">HEADLIGHT CLEANING</h1>
+                        <div class="d-flex button-service-detail gap-2 align-items-center justify-content-center gap-2">
                             <div class="buttons">
-                                <button class="btn" id="msg-service-mob" ><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button></div>
+                                <button class="btn" id="msg-service-mob" >
+                                    <span></span>
+                                    <p data-start="good luck!" data-text="Click Here!" data-title="Send us a message">
+                                    </p>
+                                </button>
+                            </div>
                         </div>
                         <div class="text-justify mt-3 service-para">
                             <p>
                                 Car headlight cleaning is an important task to ensure your headlights are functioning properly and to maintain the appearance of your vehicle. 
                                 Dirt, grime, and other debris can accumulate on the surface of the headlights, reducing their brightness and potentially causing them to appear yellow and hazy. 
-                                Keeping your car's headlights clean is essential for both safety and appearance. With clean and clear headlights, you can see the road better at night and your car will look more attractive. 
-                                Regular cleaning is important because over time, grime, dirt and other substances can build up on the surface of the headlights, reducing their brightness and visibility. A little time and effort spent cleaning your headlights can make a big difference in your driving experience and the overall look of your vehicle.
+                                
                             </p>
                         </div>
                     </div>
-                    <div class="service-detail-main p-3" id="detail2">
-                        <h1 id="text-light">Service 2</h1>
-                        <div class="d-flex  align-items-center">
-                             <button class="p-2 call-btn w-50">Reach out by phone</button>
+                    <div class="service-detail-main  square    p-3" id="detail2">
+                        <h1 id="text-light">PROJECTOR FITTING</h1>
+                        <div class="d-flex button-service-detail gap-2 align-items-center justify-content-center">
                             <div class="buttons">
-                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button></div>
+                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button></div>
                         </div>
                         <div class="text-justify  service-para">
-                            <p>
-                                Car headlight cleaning is an important task to ensure your headlights are functioning properly and to maintain the appearance of your vehicle. 
-                                Dirt, grime, and other debris can accumulate on the surface of the headlights, reducing their brightness and potentially causing them to appear yellow and hazy. 
-                                Keeping your car's headlights clean is essential for both safety and appearance. With clean and clear headlights, you can see the road better at night and your car will look more attractive. 
-                                Regular cleaning is important because over time, grime, dirt and other substances can build up on the surface of the headlights, reducing their brightness and visibility. A little time and effort spent cleaning your headlights can make a big difference in your driving experience and the overall look of your vehicle.
+                            <p> 
+                                Unlike traditional headlights, projector headlights have a more focused and intense beam of light, allowing for better visibility on the road and a more distinctive appearance. 
+                                It's important to choose high-quality projector headlights and have them installed by a professional to ensure proper function and safety. With projector headlight fittings, you'll enjoy a brighter, safer driving experience and a unique and modern look for your vehicle
                             </p>
                         </div>
                     </div>
-                    <div class="service-detail-main p-3" id="detail3">
-                        <h1 id="text-light">Service 3</h1>
-                        <div class="d-flex  align-items-center">
-                             <button class="p-2 call-btn w-50">Reach out by phone</button>
+                    <div class="service-detail-main  square    p-3" id="detail3">
+                        <h1 id="text-light">FOG LAMPS</h1>
+                        <div class="d-flex button-service-detail gap-2 align-items-center justify-content-center">
                             <div class="buttons">
-                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button></div>
+                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button></div>
                         </div>
                         <div class="text-justify service-para">
                             <p>
-                                Car headlight cleaning is an important task to ensure your headlights are functioning properly and to maintain the appearance of your vehicle. 
-                                Dirt, grime, and other debris can accumulate on the surface of the headlights, reducing their brightness and potentially causing them to appear yellow and hazy. 
-                                Keeping your car's headlights clean is essential for both safety and appearance. With clean and clear headlights, you can see the road better at night and your car will look more attractive. 
-                                Regular cleaning is important because over time, grime, dirt and other substances can build up on the surface of the headlights, reducing their brightness and visibility. A little time and effort spent cleaning your headlights can make a big difference in your driving experience and the overall look of your vehicle.
+                                Fog lamps are supplementary lights installed in a vehicle to provide additional illumination in foggy or inclement weather conditions. Unlike regular headlights, fog lamps are positioned lower on the vehicle and are designed to shine at a wider angle to reduce glare and improve visibility in heavy fog. 
+                                The lights are usually mounted in the front of the vehicle and can be switched on and off as needed.
+                                Installing fog lamps can enhance your safety and visibility when driving in challenging weather conditions.
                             </p>
                         </div>
                     </div>
-                    <div class="service-detail-main p-3" id="detail4">
-                        <h1 id="text-light">Service 4</h1>
-                        <div class="d-flex  align-items-center">
-                             <button class="p-2 call-btn w-50">Reach out by phone</button>
+                    <div class="service-detail-main  square    p-3" id="detail4">
+                        <h1 id="text-light">SYSTEMS & SPEAKERS</h1>
+                        <div class="d-flex button-service-detail gap-2 align-items-center justify-content-center">                              
                             <div class="buttons">
-                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button></div>
+                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button></div>
                         </div>
                         <div class="text-justify  service-para">
                             <p>
-                                Car headlight cleaning is an important task to ensure your headlights are functioning properly and to maintain the appearance of your vehicle. 
-                                Dirt, grime, and other debris can accumulate on the surface of the headlights, reducing their brightness and potentially causing them to appear yellow and hazy. 
-                                Keeping your car's headlights clean is essential for both safety and appearance. With clean and clear headlights, you can see the road better at night and your car will look more attractive. 
-                                Regular cleaning is important because over time, grime, dirt and other substances can build up on the surface of the headlights, reducing their brightness and visibility. A little time and effort spent cleaning your headlights can make a big difference in your driving experience and the overall look of your vehicle.
+                                Your car's audio system and speakers are the ultimate road trip companions. 
+                                Imagine cruising down the highway, windows down, and your favorite beats blasting from your car's speakers. 
+                                It's a total vibe! A good audio system consists of a head unit, speakers, and an amplifier, all working together to create an unforgettable musical experience. 
+                                Upgrading your car's audio system is like giving your car a personal DJ that's always ready to play the hottest tracks. 
                             </p>
                         </div>
                     </div>
-                    <div class="service-detail-main p-3" id="detail5">
-                        <h1 id="text-light">Service 5</h1>
-                        <div class="d-flex  align-items-center">
-                             <button class="p-2 call-btn w-50">Reach out by phone</button>
+                    <div class="service-detail-main  square    p-3" id="detail5">
+                        <h1 id="text-light">DRL MODIFICATION</h1>
+                        <div class="d-flex button-service-detail gap-2 align-items-center justify-content-center">                            
                             <div class="buttons">
-                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button></div>
+                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button></div>
                         </div>
                         <div class="text-justify  service-para">
                             <p>
-                                Car headlight cleaning is an important task to ensure your headlights are functioning properly and to maintain the appearance of your vehicle. 
-                                Dirt, grime, and other debris can accumulate on the surface of the headlights, reducing their brightness and potentially causing them to appear yellow and hazy. 
-                                Keeping your car's headlights clean is essential for both safety and appearance. With clean and clear headlights, you can see the road better at night and your car will look more attractive. 
-                                Regular cleaning is important because over time, grime, dirt and other substances can build up on the surface of the headlights, reducing their brightness and visibility. A little time and effort spent cleaning your headlights can make a big difference in your driving experience and the overall look of your vehicle.
+                                DRL, or Daytime Running Lights, are a safety feature in vehicles that are designed to increase visibility and make it easier for other drivers to see your vehicle during the day. 
+                                Modifying the DRL system can give your vehicle a unique and personalized look, and also improve its visibility on the road. However, 
+                                it's important to ensure that any modifications to the DRL system comply with local regulations and are safe for use on the road. 
                             </p>
                         </div>
                     </div>
-                    <div class="service-detail-main p-3" id="detail6">
-                        <h1 id="text-light">Service 6</h1>
-                        <div class="d-flex  align-items-center">
-                             <button class="p-2 call-btn w-50">Reach out by phone</button>
+                    <div class="service-detail-main  square    p-3" id="detail6">
+                        <h1 id="text-light">BAR LIGHTS</h1>
+                        <div class="d-flex button-service-detail gap-2 align-items-center justify-content-center">                              
                             <div class="buttons">
-                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button></div>
+                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button></div>
                         </div>
                         <div class="text-justify service-para">
                             <p>
-                                Car headlight cleaning is an important task to ensure your headlights are functioning properly and to maintain the appearance of your vehicle. 
-                                Dirt, grime, and other debris can accumulate on the surface of the headlights, reducing their brightness and potentially causing them to appear yellow and hazy. 
-                                Keeping your car's headlights clean is essential for both safety and appearance. With clean and clear headlights, you can see the road better at night and your car will look more attractive. 
-                                Regular cleaning is important because over time, grime, dirt and other substances can build up on the surface of the headlights, reducing their brightness and visibility. A little time and effort spent cleaning your headlights can make a big difference in your driving experience and the overall look of your vehicle.
+                                Bar lights, also known as light bars, are a popular aftermarket upgrade for off-road and on-road vehicles. 
+                                They provide bright and efficient lighting that can be used for a variety of purposes, including off-road driving, work lighting, and emergency lighting. 
+                                Light bars are available in different lengths, shapes, and configurations, and can be mounted on the roof, grille, or bumper of a vehicle.
                             </p>
                         </div>
                     </div>
-                    <div class="service-detail-main p-3" id="detail7">
-                        <h1 id="text-light">Service 7</h1>
-                        <div class="d-flex  align-items-center">
-                             <button class="p-2 call-btn w-50">Reach out by phone</button>
+                    <div class="service-detail-main  square    p-3" id="detail7">
+                        <h1 id="text-light">HEADLIGHT WIRING</h1>
+                        <div class="d-flex button-service-detail gap-2 align-items-center justify-content-center">                              
                             <div class="buttons">
-                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message"></p></button></div>
+                                <button class="btn" id="msg-service-mob"><span></span><p data-start="good luck!" data-text="Click Here!" data-title="Send us a message" href="https://wa.me/919789868288"></p></button></div>
                         </div>
                         <div class="text-justify  service-para">
                             <p>
-                                Car headlight cleaning is an important task to ensure your headlights are functioning properly and to maintain the appearance of your vehicle. 
-                                Dirt, grime, and other debris can accumulate on the surface of the headlights, reducing their brightness and potentially causing them to appear yellow and hazy. 
-                                Keeping your car's headlights clean is essential for both safety and appearance. With clean and clear headlights, you can see the road better at night and your car will look more attractive. 
-                                Regular cleaning is important because over time, grime, dirt and other substances can build up on the surface of the headlights, reducing their brightness and visibility. A little time and effort spent cleaning your headlights can make a big difference in your driving experience and the overall look of your vehicle.
-                            </p>
+                                Headlight wires provide power to the headlights and allow you to control them, turning them on and off as needed. 
+                                The headlight wiring system is an important part of a vehicle's electrical system and is responsible for delivering power to the headlights, allowing you to see while driving in low-light conditions. 
+                                Properly maintaining and troubleshooting the headlight wiring system is essential for ensuring the optimal performance and longevity of a vehicle's headlights.
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>   
+            
+            
+              <!--SERVIES MAIN PAGE MOBILE  -->
+
+
+
             <!-- SERVICE BORDER -->
             <div class="service-bord"></div>
             <!-- SERVICE CONTAINER ITEM 1 START-->
@@ -757,7 +806,40 @@
             <div class="service-bord"></div>
              <!-- SERVICES DETAIL SECTION -->
         </main>      
-        <!-- Footer section -->
+        <!-- FOOTER SECTION -->
+        <div class="container-fluid bg-dark text-light footer py-2 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <div class="footer-locdesc mb-2">
+                        <h4 class="text-white mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="pt-2">
+                            <a target="_blank" class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.instagram.com/customheadlights.in/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/customheadlights.in">
+                                <i class="fa-brands fa-facebook"></i></a>
+                            <a target="_blank" class='btn btn-square btn-outline-light rounded-circle me-2' href="https://www.youtube.com/@customheadlights194">
+                                    <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a target="_blank" class='btn btn-square btn-outline-light rounded-circle me-2' href="https://www.youtube.com/@customheadlights194">
+                                <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62176.70886857112!2d80.15253964079416!3d13.096378740804088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263bb756e5bf5%3A0x55322131f124eaf2!2sCustom%20Headlight%20Modification%20India!5e0!3m2!1sen!2sin!4v1673004097004!5m2!1sen!2sin"  
+                        style="border:0;"  width='300' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-center mt-4">
+                <span>Copyrights2023</span>&copy; <a class="text-decoration-none text-light" href="./index.html">CustomHeadlights</a>, All Right Reserved.
+            </div>
+        </div>
     </div>
         <script src="./js/services.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -785,7 +867,6 @@
               breakpoints: {
                 0:{
                     slidesPerView:1,
-                    
                 },
                 640:{
                     slidesPerView:2,

@@ -113,7 +113,7 @@ document.querySelector('#aboutdoor').addEventListener('click', function(e){
 document.querySelector('#servicedoor').addEventListener('click', (e) => {
     if(e){
         $('.serviceans-sec').css('display','block')
-        $('.service-img').css('display','block')
+        
         $('.car-brands').css('display','block')
         $('#tab-content').css('display','block')
     }
