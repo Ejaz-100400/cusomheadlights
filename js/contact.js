@@ -7,9 +7,9 @@ document.querySelector('.responsivemenu').addEventListener('click', () => {
     $('.responsivemenu').fadeToggle(200);
 })
 // Preloader
-setTimeout(function(){
-    $('#preloader').fadeToggle();
-},2000)
+// setTimeout(function(){
+//     $('#preloader').fadeToggle();
+// },2000)
 
 
 

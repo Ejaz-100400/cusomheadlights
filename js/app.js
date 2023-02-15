@@ -15,9 +15,6 @@ setTimeout(function(){
 },2000)
 
 
-document.querySelector('.fa-phone').addEventListener('click', () => {
-    $('.fa-phone').fadeToggle(200);
-})
 
 
 window.onscroll=function(){
@@ -55,6 +52,7 @@ const statsec=document.querySelector('.about-statssec');
 const options={
     threshold:1,
 }
+
 // ABOUT SECTION
 document.querySelector('#aboutdoor').addEventListener('click', function(e){
     if(e){

@@ -6,12 +6,12 @@ document.querySelector('.fa-bars').addEventListener('click', () => {
 document.querySelector('.responsivemenu').addEventListener('click', () => {
     $('.responsivemenu').fadeToggle(200);
 })
-document.querySelector('.customheadlight').style.display = 'none';
+// document.querySelector('.customheadlight').style.display = 'none';
 // Preloader
-setTimeout(function(){
-    $('#preloader').fadeToggle();
-    document.querySelector('.customheadlight').style.display = 'block';
-},2000)
+// setTimeout(function(){
+//     $('#preloader').fadeToggle();
+//     document.querySelector('.customheadlight').style.display = 'block';
+// },2000)
 
 
 window.onscroll=function(){

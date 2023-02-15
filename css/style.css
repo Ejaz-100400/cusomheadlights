@@ -442,6 +442,7 @@ blockquote{
 /* ABOUT SECTION */
 .about-section{
     background:linear-gradient(to bottom,black,#171717);
+    min-height: 60vh;
 }
 .aboutans-sec {
     flex-direction:row;  
@@ -453,7 +454,6 @@ blockquote{
 
 .about-ques{
     height:100%;
-    width:100%;
     width:100%;
     z-index:7;
     background-color: #171717;
@@ -686,6 +686,9 @@ color:white;
     margin-left:200px;
 }
 #counter-mobile{
+    display:none;
+}
+.aboutans-sec{
     display:none;
 }
 
