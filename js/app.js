@@ -1,12 +1,17 @@
 //Header action
 
 // bar and close button
-document.querySelector('.fa-bars').addEventListener('click', () => {
-    $('.responsivemenu').fadeToggle(200);
-})
-document.querySelector('.responsivemenu').addEventListener('click', () => {
-    $('.responsivemenu').fadeToggle(200);
-})
+// Get the navbar toggle and container elements
+const menuToggle = document.querySelector('#menuToggle');
+const menuContainer = document.querySelector('.responsivemenu');
+
+// Add an event listener to the toggle
+menuToggle.addEventListener('click', function() {
+  // Toggle the 'active' class on the container to show or hide it
+  menuContainer.classList.toggle('show');
+});
+
+
 document.querySelector('.customheadlight').style.display = 'none';
 // Preloader
 setTimeout(function(){
