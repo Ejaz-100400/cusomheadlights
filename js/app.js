@@ -100,7 +100,7 @@ document.querySelector('#aboutdoor').addEventListener('click', function(e){
                     let rating=1;
                     function ratingsdone(){
                         rating++;
-                        document.querySelector('#ratings').innerHTML = rating + '+';
+                        document.querySelector('#ratings').innerHTML = rating +'.0<i class="fa-solid fa-star  text-white mb-3"></i>';
                         if(rating==5){
                             clearInterval(ratings)
                         }

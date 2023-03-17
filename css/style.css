@@ -122,7 +122,7 @@ header{
         background-color:rgba(25, 21, 21, 0.196);
         backdrop-filter:blur(10px);
         min-height: 110vh;
-        z-index:25;
+        z-index:15;
     }
     .des-header{
         display:none;
@@ -140,6 +140,7 @@ header{
         background-color: rgb(0, 0, 0);
         border:2px solid #11efa9;
         transition: all 0.2s ease-in-out;
+        z-index: 20;
     }
     .fa-xmark:hover{
         color: #000000;
@@ -524,6 +525,9 @@ blockquote{
     text-shadow: 5px 2px 12px #11efa9;
     color:white;
 }
+.ri-medal-2-fill{
+    font-size:50px;
+}
 .tab-pane{
     color:white;
 }
@@ -691,7 +695,9 @@ color:white;
 .aboutans-sec{
     display:none;
 }
-
+.car-brands{
+    display:none;
+}
 @media(max-width:1167px){
     .chooseans-left{
         width:100%;
@@ -792,9 +798,6 @@ color:white;
 .nav-pills .nav-link.active{
     background-color: #f7e30c;
     color:black;
-}
-.car-brands{
-    display:none;
 }
 .car-items{
     animation:slide 30s ease-in-out infinite;
@@ -1649,7 +1652,7 @@ textarea:focus,input:focus{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index:55;
+    z-index:19;
     position:absolute;
     right:10px;
     top:25px;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7d3c33708a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">              
     <title>Custom Headlight | Chennai</title>
@@ -57,10 +58,12 @@
         
         <!-- Header res -->
         <header class="resp-header  align-items-center justify-content-between  position-fixed w-100 p-2">
-            <img src="./img/cropped-Dark-roads-no-more-300x151-removebg-preview.png" alt="" class="resp-img">
+            <a class="logo-img" href="./index.html">
+                <img src="./img/cropped-Dark-roads-no-more-300x151-removebg-preview.png" alt="" width="160">
+            </a>
             <!-- <i class="fa-solid fa-bars text-light fa-3x"></i> -->
         </header>
-        <div id="menuToggle">
+        <div id="menuToggle" class="position-fixed">
             <input type="checkbox" />
             <span id="span1"></span>
             <span id="span2"></span>
@@ -240,7 +243,7 @@
                                
                             </div>
                             <div class="col-sm-6 col-lg-3 text-center wow fadeIn statsbox xyz-in" data-wow-delay="0.7s">
-                                <i class="fa-solid fa-star fa-3x text-white mb-3"></i>
+                                <i class="ri-medal-2-fill text-white mb-3"></i>
                                 <h1 class="coun" id="ratings" data-toggle="counter-up">0</h1>
                                 <span class="fs-5">Google Ratings</span>
                                
@@ -267,10 +270,11 @@
                                 <span class="fs-5">Years</span>
                                
                             </div>
-                            <div class="col-sm-6 col-lg-3 text-center wow fadeIn statsbox xyz-in" data-wow-delay="0.7s">
-                                <i class="fa fa-award fa-3x text-white mb-3"></i>
-                                <i class="fa-solid fa-star fa-3x text-white mb-3"></i>
-                                <h1 class="coun" id="ratings" data-toggle="counter-up">5</h1>
+                            <div class="col-sm-6 col-lg-3 text-center wow fadeIn statsbox xyz-in" data-wow-delay="0.7s">           
+                                <i class="ri-medal-2-fill text-white mb-3"></i>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <h1 class="coun" id="ratings" data-toggle="counter-up">5.0</h1><i class="fa-solid fa-star text-white"></i>
+                                </div>    
                                 <span class="fs-5">Google Ratings</span>
                                
                             </div>
@@ -502,8 +506,8 @@
                 <div class="d-flex flex-wrap align-items-center justify-content-between">
                     <div class="footer-locdesc mb-2">
                         <h4 class="text-white mb-4">Contact</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>19, 52, 3rd Main Rd, Old Ambattur, Sai Nagar, Ambattur, Chennai, Tamil Nadu 600058</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9790889499</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                         <div class="pt-2">
                             <a target="_blank" class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.instagram.com/customheadlights.in/">

@@ -23,3 +23,14 @@ window.onscroll=function(){
         document.querySelector('.resp-header').style.backgroundColor = 'transparent';
     }
 }
+
+
+  // FORM VALIDATION 
+  document.querySelector('.submit-btn').addEventListener('click', (e)=>{
+    e.preventDefault();
+    let phone = document.querySelector('input[name="phone"]')
+    if(phone.value===''){
+        console.log(e);
+    }
+
+  })

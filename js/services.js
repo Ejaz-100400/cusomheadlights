@@ -193,3 +193,4 @@ document.getElementById("click1").onclick = function() {
       window.open('https://api.whatsapp.com/send?phone=919789868288', '_blank');
     });
   });
+
