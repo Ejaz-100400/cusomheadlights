@@ -8,10 +8,7 @@ menuToggle.addEventListener('click', function() {
   // Toggle the 'active' class on the container to show or hide it
   menuContainer.classList.toggle('show');
 });
-// Preloader
-setTimeout(function(){
-    $('#preloader').fadeToggle();
-},2000)
+
 
 
 
