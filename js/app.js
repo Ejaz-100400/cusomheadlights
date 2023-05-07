@@ -20,6 +20,20 @@ setTimeout(function(){
 },2000)
 
 
+//about automatic scroll 
+$("li#about").click(function(e) {
+    // Check if the offset is defined
+    var offset = $(".about-ques").offset();
+    if (offset) {
+        // Animate html body and use jQuery scrollTop
+        $('html, body').animate({
+            scrollTop: offset.top,
+        }, 100);
+        
+        $('.about-ques').show(100);
+    }
+    e.preventDefault();
+});
 
 
 window.onscroll=function(){
