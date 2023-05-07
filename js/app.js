@@ -15,9 +15,9 @@ menuToggle.addEventListener('click', function() {
 document.querySelector('.customheadlight').style.display = 'none';
 // Preloader
 setTimeout(function(){
-    $('#preloader').fadeToggle(100);
+    $('#preloader').fadeOut(100);
     document.querySelector('.customheadlight').style.display = 'block';
-},2000)
+},3000)
 
 
 //about automatic scroll 

@@ -179,20 +179,19 @@ header{
 }
 /* PRELOADER */
 #preloader{
-    background: black;
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center;
     width:100%;
     height:100%;
-    z-index:20;
+    z-index:10;
     opacity:1;
     position:fixed;
+    backdrop-filter: blur(10px);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.612),rgba(19, 19, 19, 0.21),rgba(0, 0, 0, 0.242)),url('https://wallpaperaccess.com/full/229504.jpg');
   }
 #preloader>section{
     position:absolute;
-    height:250px;
-    width:300px;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
@@ -202,9 +201,32 @@ header{
 #pre-img{
     animation:zoomlight 1.5s ease-in-out infinite;
 }
-#pre-img>img{
+.spinner>img{
     width:100%;
 }
+.spinner{
+    margin-left:50px;
+    width: 300px;
+    height:300px;
+    animation: spinner-8k6ao5md 2s infinite alternate-reverse;
+    border-radius: 50%;
+    background-color: #06060633;
+    backdrop-filter: blur(30px);
+    transform-origin: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ @keyframes spinner-8k6ao5md {
+    0% {
+       transform:  rotateY(0deg);
+    }
+ 
+    100% {
+       transform:  rotateY(360deg);
+    }
+ }
 
 /* MAIN SECTION */
 main{
@@ -1749,3 +1771,38 @@ textarea:focus,input:focus{
         display:flex;
     }
   }
+
+
+
+
+  /* ERROR PAGE */
+  .error-section{
+    min-height: 100vh;  
+    background-image:linear-gradient(to top right,#090c0ce1,#161717a2),url('https://i.pinimg.com/564x/87/a3/55/87a355ad40a9eda510da52056b03f740.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    background-attachment: fixed;
+  }
+  .error-404{
+    align-items: center;
+    text-align: left;
+  }
+
+  .text-404{
+    font-weight:bold;
+    font-size:70px;
+    color:white;
+  }
+
+  .error-img{
+    animation:errorbounce 3s ease-in-out infinite alternate;
+  }
+  @keyframes errorbounce{
+    0%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform:translateY(15px);
+    }
+}
