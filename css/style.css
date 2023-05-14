@@ -521,8 +521,8 @@ blockquote{
     /* background-color: rgba(0, 0, 0, 0.018); */
     background-color: rgba(255, 255, 255, 0.167);
     backdrop-filter:blur(10px);
-    gap:20px;
     width:250px;
+    height:200px;
     padding:15px;
     border-radius: 23px;
     color:rgb(254, 254, 254);
@@ -530,6 +530,10 @@ blockquote{
     box-shadow: 2px 7px 10px 6px rgb(0, 0, 0);
     animation:glowstatsbox .5s ease-in infinite alternate;
     position:relative;
+}
+.statsbox:hover{
+    background-color: #12e3a19d;
+    transition:all .3s linear;
 }
 /* @keyframes glowstatsbox{
     0%{
@@ -585,7 +589,10 @@ blockquote{
 /* CHOOSE SECTION */
 .choose-section{
     min-height:90vh;
-    background-color: #171717;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.333),rgba(0, 0, 0, 0.703)),url('https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2021/11/23091956/car-headlights-clean0112320210215.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    /* background-color: #171717; */
 }
 .chooseimg{
     border-radius:20px;
